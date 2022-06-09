@@ -1,21 +1,56 @@
-import React, { Component } from "react";
-export default class SignUp extends Component {
-    render() {
+import React, { useState } from "react";
+import API from '../UTILS/API';
+import { useNavigate } from "react-router-dom";
+import Navbar from "../component/navbar";
+
+
+const SignUp = () => {
+  let navigate = useNavigate();
+
+  const [user, setUser] = useState ({
+    username:"",
+    email:"",
+    password:"",
+    confirmPassword:""
+  })
+  
+  function handleChange(e) {
+    setUser({...user,[e.target.name]:e.target.value})
+  }
+
+  function submitUser(e){
+    e.preventDefault();
+    API.createUser(user).then(res => {
+      console.log(res)
+      navigate("/profile/"+res.data.id)
+    })
+  }
+    
+
+
+
         return (
-            <form>
+          
+            <form onSubmit={submitUser}>
+              <Navbar/>
             <h3>Sign Up</h3>
             <div className="mb-3">
-              <label>Full Name</label>
+            
+              <label>Username</label>
               <input
+                onChange={handleChange}
+                name="username"
                 type="text"
                 className="form-control"
-                placeholder="Full name"
+                placeholder="Username"
               />
             </div>
             
             <div className="mb-3">
               <label>Email address</label>
               <input
+                onChange={handleChange}
+                name="email"
                 type="email"
                 className="form-control"
                 placeholder="Enter email"
@@ -24,6 +59,8 @@ export default class SignUp extends Component {
             <div className="mb-3">
               <label>Password</label>
               <input
+                onChange={handleChange}
+                name="password"
                 type="password"
                 className="form-control"
                 placeholder="Enter password"
@@ -33,6 +70,8 @@ export default class SignUp extends Component {
             <div className="mb-3">
               <label>Confirm Password</label>
               <input
+                onChange={handleChange}
+                name="confirmPassword"
                 type="password"
                 className="form-control"
                 placeholder="Confirm password"
@@ -48,6 +87,9 @@ export default class SignUp extends Component {
               Already registered <a href="/sign-in">sign in?</a>
             </p>
           </form>
-        )
-      }
-    }
+          
+        );
+        
+      };
+    
+    export default SignUp
