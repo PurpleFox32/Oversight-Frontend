@@ -1,13 +1,13 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../src/stylesheets/bootstrap.css'
-import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Signup from './components/signup';
 import Layout from './pages/layout';
 import Home from './pages/home';
 import About from './pages/about';
-import Profile from './pages/profile';
+import Profile from './pages/Profile';
 import ReviewBoard from'./pages/reviewBoard';
 import Searchresults from './pages/searchresults';
 
@@ -19,6 +19,7 @@ import Searchresults from './pages/searchresults';
 function App() {
   return (
 
+    
       // <div className="App">
       //   <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       //     <div className="container">
@@ -49,7 +50,7 @@ function App() {
             <Route  path="/" element={<Layout />}>
            <Route path="home" element={<Home/>} />
           <Route path="/about" element={<About />} />
-           <Route path="/profile" element={<Profile/>} />
+           <Route path="/profile/:id" element={<Profile/>} />
            <Route path="/reviewBoard" element={<ReviewBoard/>} />
            <Route path="/searchResults" element={<Searchresults/>} />
 
