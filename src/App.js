@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import ReviewBoard from'./pages/ReviewBoard';
-import Searchresults from './pages/SearchResults';
+import SearchResults from './pages/SearchResults';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/profile/:id' element={<Profile />} />
             <Route path='/reviewBoard' element={<ReviewBoard />} />
-            <Route path='/searchResults' element={<Searchresults />} />
+            <Route path='/searchResults' element={<SearchResults />} />
 
             <Route path='/sign-in' element={<Login />} />
             <Route path='/sign-up' element={<Signup />} />
