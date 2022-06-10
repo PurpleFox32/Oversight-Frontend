@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import API from '../UTILS/API';
-<<<<<<< HEAD
-=======
 import { useNavigate } from "react-router-dom";
-import Navbar from "../component/navbar";
+import Navbar from "../Component/Navbar";
 
->>>>>>> 85a16e321dfc32f86eef6492fab2641866ee17c8
 
 const Login = () => {
   let navigate = useNavigate();

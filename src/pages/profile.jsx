@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import API from '../UTILS/API';
-import NavBar2 from '../components/NavBar2'
+import NavBar2 from '../Components/NavBar2'
+
 const Profile = () => {
   const [user, setUser] = useState({});
   const { id } = useParams();
