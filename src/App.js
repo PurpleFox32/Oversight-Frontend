@@ -9,32 +9,11 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import ReviewBoard from'./pages/ReviewBoard';
-import Searchresults from './pages/Searchresults';
+import Searchresults from './pages/SearchResults';
 
 function App() {
   return (
-    // <div className="App">
-    //   <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-    //     <div className="container">
-    //       <Link className="navbar-brand" to={'/sign-in'}>
-    //         OverSight
-    //       </Link>
-    //       <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-    //         <ul className="navbar-nav ml-auto">
-    //           <li className="nav-item">
-    //             <Link className="nav-link" to={'/sign-in'}>
-    //               Login
-    //             </Link>
-    //           </li>
-    //           <li className="nav-item">
-    //             <Link className="nav-link" to={'/sign-up'}>
-    //               Sign up
-    //             </Link>
-    //           </li>
-    //         </ul>
-    //       </div>
-    //     </div>
-    //   </nav>
+    
     <div className='auth-wrapper'>
       <div className='auth-inner'>
         <Routes>
