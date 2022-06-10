@@ -5,10 +5,10 @@ import { Routes, Route } from 'react-router-dom';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Layout from './pages/Layout';
-import Home from './pages/Home';
-import About from './pages/About';
+import Home from './pages/home';
+import About from './pages/about';
 import Profile from './pages/Profile';
-import ReviewBoard from'./pages/ReviewBoard';
+import ReviewBoard from'./pages/reviewBoard';
 import SearchResults from './pages/SearchResults';
 
 function App() {
