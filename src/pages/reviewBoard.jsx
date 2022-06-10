@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Component/Navbar'
 
 
-const reviewBoard = () => {
+const ReviewBoard = () => {
   return (
     <div><Navbar/>
       This is the review board
@@ -10,4 +10,4 @@ const reviewBoard = () => {
   )
 }
 
-export default reviewBoard
+export default ReviewBoard
