@@ -1,8 +1,10 @@
 import React from 'react'
+import Navbar from '../component/navbar'
+
 
 const reviewBoard = () => {
   return (
-    <div>
+    <div><Navbar/>
       This is the review board
     </div>
   )

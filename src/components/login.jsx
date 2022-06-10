@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import API from '../UTILS/API';
+<<<<<<< HEAD
+=======
+import { useNavigate } from "react-router-dom";
+import Navbar from "../component/navbar";
+
+>>>>>>> 85a16e321dfc32f86eef6492fab2641866ee17c8
 
 const Login = () => {
+  let navigate = useNavigate();
+
   const [ user, setUser ] = useState({
-    email: "",
-    password: ""
+    username: "",
+    password: "",
+    id: ""
   })
 
 
@@ -16,33 +25,49 @@ function handleChange(event) {
 
 function submitUser(e) {
   e.preventDefault();
-  API.createUser(user).then(res => {
+
+  let parsedId = parseInt(user.id)
+
+  API.getOneById(parsedId).then(res => {
     console.log(res)
+    navigate("/profile/"+res.data.id)
   })
+  
 }
 
 
   return (
     <form onSubmit={submitUser}>
+      <Navbar/>
       <h3>Sign In</h3>
       <div className="mb-3">
-        <label>Email address</label>
+        <label>Username</label>
         <input
           onChange={handleChange}
-        name="email"
-          type="email"
+          name="username"
+          type="text"
           className="form-control"
-          placeholder="Enter email"
+          placeholder="Username"
         />
       </div>
       <div className="mb-3">
         <label>Password</label>
         <input
-        name="password"
+          onChange={handleChange}
+          name="password"
           type="password"
           className="form-control"
-          onChange={handleChange}
           placeholder="Enter password"
+        />
+      </div>
+      <div className="mb-3">
+        <label>Id</label>
+        <input
+          onChange={handleChange}
+          name="id"
+          type="text"
+          className="form-control"
+          placeholder="Enter id"
         />
       </div>
       <div className="mb-3">
@@ -58,9 +83,8 @@ function submitUser(e) {
         </div>
       </div>
       <div className="d-grid">
-        <button type="submit" className="btn">
-          {" "}
-          {/* btn-primary  */}
+        <button type="submit" className="btn btn-primary">
+          
           Submit
         </button>
       </div>
