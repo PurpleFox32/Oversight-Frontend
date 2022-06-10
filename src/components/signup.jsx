@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import API from '../UTILS/API';
 import { useNavigate } from "react-router-dom";
-import Navbar from "../component/navbar";
+import Navbar from "../Component/Navbar";
 
 
 const SignUp = () => {
