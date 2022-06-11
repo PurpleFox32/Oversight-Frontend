@@ -2,14 +2,14 @@ import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../src/stylesheets/bootstrap.css';
 import { Routes, Route } from 'react-router-dom';
-import Login from './Components/Login';
-import Signup from './Components/Signup';
-import Layout from './pages/Layout';
+import Login from './components/login';
+import Signup from './components/signup';
+import Layout from './pages/layout';
 import Home from './pages/home';
 import About from './pages/about';
-import Profile from './pages/Profile';
-import ReviewBoard from'./pages/reviewBoard';
-import SearchResults from './pages/SearchResults';
+import Profile from './pages/profile';
+import ReviewBoard from './pages/reviewBoard';
+import SearchResults from './pages/searchresults';
 
 function App() {
   return (
