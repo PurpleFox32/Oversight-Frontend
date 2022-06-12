@@ -8,7 +8,7 @@ const ReviewBoard = () => {
   <div>
     <div className="navBar">
       <NavBar2 />
-      This is the review boar
+      This is the review board
     </div>
     <div className="review">
       <Comment />
