@@ -1,6 +1,8 @@
 import React from 'react'
+import Search from './search'
 
 const NavBar3 = () => {
+
   return (
     <div>
         <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
@@ -22,11 +24,7 @@ const NavBar3 = () => {
         </li>
       </ul>
       
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </input>
-        <button class="btn btn-outline-info" type="submit">Search</button>
-      </form>
+      <Search />
     </div>
   </div>
 </nav>

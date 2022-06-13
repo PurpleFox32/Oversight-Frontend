@@ -2,6 +2,7 @@ import React from "react";
 
 
 
+
 function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
@@ -26,6 +27,7 @@ function Navbar() {
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             </input>
+            
         <button class="btn btn-outline-info" type="submit">Search</button>
       </form>
     </div>
