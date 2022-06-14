@@ -11,10 +11,12 @@
     padding: 20px 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
+    margin-bottom: 30.8em
 }
 .container .card:hover
 {
     height: 450px;
+    margin-bottom: 0em;
 }
 .container .card .imgContainer
 {
@@ -56,3 +58,7 @@
         left: -2px;
     }
 }
+
+/* .container{
+    margin-bottom: 28.9em
+} */

@@ -20,7 +20,7 @@ function Navbar() {
           <a class="btn btn-outline-secondary" href="http://localhost:3000/reviewBoard">Reviews</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-info" href="http://localhost:3000/home" tabindex="-1" aria-disabled="true">Logout</a>
+          <a class="btn btn-outline-info" href="http://localhost:3000/home" tabindex="-1" aria-disabled="true">Cancel</a>
         </li>
       </ul>
       
