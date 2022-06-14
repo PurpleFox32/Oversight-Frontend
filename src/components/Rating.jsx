@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./Rating.css";
+import "../stylesheets/Rating.css";
 
 const Rating = () => {
   const [title, setTitle] = useState("");
