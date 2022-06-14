@@ -1,17 +1,17 @@
-import React from 'react'
+import React from 'react';
+import NavBar3 from '../components/NavBar3';
+
 
 
 const about = () => {
   return (
-    
-   <div>
-     this is about
-   </div>
+    <div>
+      <NavBar3/>
+      
+      
+      
+    </div>
   )
 }
-
-
-    
-  
 
 export default about

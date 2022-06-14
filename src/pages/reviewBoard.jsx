@@ -1,11 +1,20 @@
 import React from 'react'
+import NavBar2 from '../components/NavBar2'
+import Rating from '../components/Rating'
 
-const reviewBoard = () => {
+
+const ReviewBoard = () => {
+  
   return (
-    <div>
-      This is the review board
+  <div>
+    <div className="navBar">
+      <NavBar2 />
+      <Rating />
     </div>
+    </div> 
+   
+    
   )
 }
 
-export default reviewBoard
+export default ReviewBoard
