@@ -1,12 +1,19 @@
 import React from 'react'
-import Navbar from '../component/navbar'
+import NavBar2 from '../components/NavBar2'
+import Rating from '../components/Rating'
 
 
 const ReviewBoard = () => {
+  
   return (
-    <div><Navbar/>
-      This is the review board
+  <div>
+    <div className="navBar">
+      <NavBar2 />
+      <Rating />
     </div>
+    </div> 
+   
+    
   )
 }
 

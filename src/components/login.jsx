@@ -34,7 +34,7 @@ function submitUser(e) {
 
 
   return (
-    <form onSubmit={submitUser}>
+    <form onSubmit={submitUser} class="container">
       <Navbar/>
       <h3>Sign In</h3>
       <div className="mb-3">
