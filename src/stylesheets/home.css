@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
+.container{
+    margin: 10%;
 
+}
 
 .container .card
 {
@@ -59,13 +62,21 @@
     }
 }
 .logostyle img{
-    width: 40%;
+    margin: 50px;
+    width: 35%;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 33.5em;
+    box-shadow:
+        0 0 6px 3px rgb(0, 247, 255),
+        0 0 9px 6px #8c00ff,
+        0 0 12px 9px rgb(225, 0, 255);
 }
+
 .logostyle p{
     text-align: center;
+    padding: 10px;
 }
 .logostyle h2{
     text-align: center;
