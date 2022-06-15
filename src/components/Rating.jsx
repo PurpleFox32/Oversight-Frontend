@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./Rating.css";
 
+
 const Rating = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
