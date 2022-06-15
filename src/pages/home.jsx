@@ -10,7 +10,7 @@ const Home = () => {
                 <div class="d-flex justify-content-center">
                     <div class="card d-flex position-relative flex-column">
                         <div class='imgContainer'>
-                            <img src='https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/kronos/common/social-share/social-share-image.jpg' />
+                            <img src='https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/kronos/common/social-share/social-share-image.jpg' alt=''/>
                         </div>
                         <div class="content">
                             <h2>Card One</h2>
@@ -19,7 +19,7 @@ const Home = () => {
                     </div>
                     <div class="card d-flex position-relative flex-column">
                         <div class='imgContainer'>
-                            <img src='https://library.sportingnews.com/2021-08/fifa-22-release-date_yxgrfxd4qqx71awy9dukkjxyx.jpg' />
+                            <img src='https://library.sportingnews.com/2021-08/fifa-22-release-date_yxgrfxd4qqx71awy9dukkjxyx.jpg' alt=''/>
                         </div>
                         <div class="content">
                             <h2>Card Two</h2>
@@ -28,7 +28,7 @@ const Home = () => {
                     </div>
                     <div class="card d-flex position-relative flex-column">
                         <div class='imgContainer'>
-                            <img src='https://upload.wikimedia.org/wikipedia/en/a/a1/Mario_Kart_64.jpg' />
+                            <img src='https://upload.wikimedia.org/wikipedia/en/a/a1/Mario_Kart_64.jpg' alt=''/>
                         </div>
                         <div class="content">
                             <h2>Card Three</h2>
