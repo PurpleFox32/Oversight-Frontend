@@ -2,7 +2,8 @@ import React from 'react';
 import NavBar3 from '../components/NavBar3';
 import "./home.css";
 
-const About = () => {
+
+const about = () => {
   return (
     
    <div><NavBar3/>
@@ -18,8 +19,4 @@ const About = () => {
   )
 }
 
-
-    
-  
-
-export default About
+export default about

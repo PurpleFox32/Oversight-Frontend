@@ -1,7 +1,6 @@
 import React from 'react'
 import NavBar2 from '../components/NavBar2'
-import Comment from '../components/comment'
-import Search from '../components/NavBar3'
+import Rating from '../components/Rating'
 
 
 const ReviewBoard = () => {
@@ -10,10 +9,7 @@ const ReviewBoard = () => {
   <div>
     <div className="navBar">
       <NavBar2 />
-      This is the review board
-    </div>
-    <div className="review">
-      <Comment />
+      <Rating />
     </div>
     </div> 
    
