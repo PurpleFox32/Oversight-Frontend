@@ -25,7 +25,6 @@ function App() {
             <Route path='/searchResults' element={<SearchResults />} />
             <Route path='/sign-in' element={<Login />} />
             <Route path='/sign-up' element={<Signup />} />
-         
         </Routes>
         
       </div>
