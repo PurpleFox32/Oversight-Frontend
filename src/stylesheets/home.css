@@ -2,7 +2,7 @@
 
 
 .container{
-    margin: 10%;
+    margin-top: 2em;
 
 }
 
@@ -42,7 +42,7 @@
     margin-top: -140px;
     padding: 10px 15px;
     text-align: center;
-    color:#111;
+    color:rgb(52, 163, 214);
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -60,25 +60,4 @@
     .container .card .imgContainer{
         left: -2px;
     }
-}
-.logostyle img{
-    margin: 50px;
-    width: 35%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 33.5em;
-    box-shadow:
-        0 0 6px 3px rgb(0, 247, 255),
-        0 0 9px 6px #8c00ff,
-        0 0 12px 9px rgb(225, 0, 255);
-}
-
-.logostyle p{
-    text-align: center;
-    padding: 10px;
-}
-.logostyle h2{
-    text-align: center;
-    color: #8c00ff;
 }
