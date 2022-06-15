@@ -1,0 +1,14 @@
+#logo{
+    max-width: 400px;
+    margin: 4em;
+    border-radius: 33.5em;
+    box-shadow:
+        0 0 6px 3px rgb(0, 247, 255),
+        0 0 9px 6px #8c00ff,
+        0 0 12px 9px rgb(225, 0, 255);
+}
+
+.logostyle{
+    text-align: center;
+    margin: 2em 10em 8.7em 10em;
+}
