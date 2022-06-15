@@ -58,7 +58,16 @@
         left: -2px;
     }
 }
-
-/* .container{
-    margin-bottom: 28.9em
-} */
+.logostyle img{
+    width: 40%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logostyle p{
+    text-align: center;
+}
+.logostyle h2{
+    text-align: center;
+    color: #8c00ff;
+}
