@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import API from '../UTILS/API';
 import { useNavigate } from "react-router-dom";
 import Navbar from "../component/navbar";
+import "../stylesheets/signup.css";
 
 
 const SignUp = () => {
@@ -56,6 +57,7 @@ const SignUp = () => {
             placeholder="Enter email"
           />
         </div>
+        
         <div className="mb-3">
           <label>Password</label>
           <input
