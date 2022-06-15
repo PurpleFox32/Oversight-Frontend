@@ -12,18 +12,18 @@ const NavBar3 = () => {
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="http://localhost:3000/home">
-      <img src="OverSight-Logo.png" alt="Logo" width="24px" height="24px" class='logo' />verSight
+      <img src="OverSight-Logo.png" alt="Logo" width="24px" height="24px" class='logo' /> verSight
     </a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="btn btn-outline-primary" aria-current="page" href="http://localhost:3000/about">About</a>
+          <a class="btn btn-outline-primary" aria-current="page" href="http://localhost:3000/about" id='about'>About</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-secondary" href="http://localhost:3000/sign-up">Sign Up</a>
+          <a class="btn btn-outline-secondary" href="http://localhost:3000/sign-up" id='signup' >Sign Up</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-info" href="http://localhost:3000/sign-in" tabindex="-1" aria-disabled="true">Login</a>
+          <a class="btn btn-outline-info" href="http://localhost:3000/sign-in" tabindex="-1" aria-disabled="true" id='login' >Login</a>
         </li>
       </ul>
       
