@@ -1,57 +1,68 @@
-import React from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import API from '../UTILS/API';
 import "../stylesheets/Rating.css";
 
 
 const Rating = () => {
-  const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
-  const [author, setAuthor] = useState("");
+  const [user, setUser] = useState({});
+  const { id } = useParams();
+
+  useEffect(() => {
+    API.getOneById(id).then(res => {
+      console.log(res);
+      setUser(res.data);
+      console.log(user)
+    })
+  }, [])
 
   return (
+    <div>
+       <h2> Welcome {user.username}  </h2>
+    <div class="game-info">
+      <div>
+      <div class="card mb-3">
+  <div class="row g-6">
+    <div class="col-md-4">
+      <img
+        src="https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/kronos/common/social-share/social-share-image.jpg"
+        alt=""
+        class="img-fluid rounded"
+      />
+    </div>
+    <div class="col-md-5">
+      <div class="card-body">
+        <h5 class="card-title">Game Title </h5>
+        <p class="card-text">
+        Call of Duty is a first-person shooter video game franchise published by Activision. Starting out in 2003, it first focused on games set in World War II. Over time, 
+        the series has seen games set in the midst of the Cold War, futuristic worlds, and outer space. 
+        </p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</div>
+  
+
     <div className="create">
-      <h2>Add a New Review</h2>
       <form>
-        <label>Game title:</label>
-        <input
-          type="text"
-          required
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <label>Review :</label>
+        <label>Review</label>
         <textarea
           required
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
-        <label>Gamer Name:</label>
-        <input
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-        ></input>
-        <div class="rating">
-          <input type="radio" name="rating" value="5" id="5" />
-          <label for="5">☆</label>
-          <input type="radio" name="rating" value="4" id="4" />
-          <label for="4">☆</label>
-          <input type="radio" name="rating" value="3" id="3" />
-          <label for="3">☆</label>
-          <input type="radio" name="rating" value="2" id="2" />
-          <label for="2">☆</label>
-          <input type="radio" name="rating" value="1" id="1" />
-          <label for="1">☆</label>
-        </div>
         <button>Add Review</button>
-        <div class="review">
-          <div class="review-post">
-            <h3>{title}</h3>
-            <p>{body}</p>
-            <h6>{author}</h6>
-          </div>
-        </div>
       </form>
     </div>
+    </div>
+    </div>
+   
   );
 };
 
