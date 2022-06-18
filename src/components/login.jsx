@@ -7,20 +7,20 @@ import Navbar from "../component/navbar";
 const Login = () => {
   let navigate = useNavigate();
 
-  const [ user, setUser ] = useState({
+  const [user, setUser] = useState({
     username: "",
     password: ""
   })
 
 
-function handleChange(event) {
-  setUser({ ...user, [event.target.name]: event.target.value })
-}
+  function handleChange(event) {
+    setUser({ ...user, [event.target.name]: event.target.value })
+  }
 
 
 
-function submitUser(e) {
-  e.preventDefault();
+  function submitUser(e) {
+    e.preventDefault();
 
   // let parsedId = parseInt(user.id)
 
@@ -40,6 +40,7 @@ function submitUser(e) {
   
 }
   return (
+    <div>
     <form onSubmit={submitUser} class="container">
       <Navbar/>
       <h3>Sign In</h3>
@@ -64,27 +65,27 @@ function submitUser(e) {
         />
       </div>
       <div className="mb-3">
-        <div className="custom-control custom-checkbox">
+        {/* <div className="custom-control custom-checkbox">
           <input
-            type="checkbox"
-            className="custom-control-input"
-            id="customCheck1"
+            onChange={handleChange}
+            name="username"
+            type="text"
+            className="form-control"
+            placeholder="Username"
           />
-          <label className="custom-control-label" htmlFor="customCheck1">
-            Remember me
-          </label>
+        </div> */}
+        <div className="d-grid">
+          <button type="submit" className="btn btn-primary">
+
+            Submit
+          </button>
         </div>
-      </div>
-      <div className="d-grid">
-        <button type="submit" className="btn btn-primary">
-          
-          Submit
-        </button>
-      </div>
-      <p className="forgot-password text-right">
-        Forgot <a href="#">password?</a>
-      </p>
-    </form>
+        <p className="forgot-password text-right">
+          Forgot <a href="#">password?</a>
+        </p>
+        </div>
+      </form>
+    </div>
   );
 };
 

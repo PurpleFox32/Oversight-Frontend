@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import NavBar3 from '../components/NavBar3';
 
-const SearchResults = () => {
+
+const SearchResults = () =>{
   return (
     <div>
-      Search result page
+    <NavBar3/>
+  
     </div>
+    
   )
 }
 
