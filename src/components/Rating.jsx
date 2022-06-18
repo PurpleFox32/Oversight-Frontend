@@ -15,7 +15,7 @@ const Rating = () => {
       setUser(res.data);
       console.log(user)
     })
-  }, [])
+  })
 
   return (
     <div>
