@@ -1,5 +1,5 @@
 import React from "react"
-import search from '../components/search'
+import Search from '../components/search'
 
 
 
@@ -31,6 +31,7 @@ function NavBar2 () {
           <a class="btn btn-outline-info" href="http://localhost:3000/home" tabindex="-1" aria-disabled="true">Logout</a>
         </li>
       </ul>
+      <Search />
     </div>
   </div>
 </nav>
