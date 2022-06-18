@@ -1,5 +1,4 @@
 import React from "react";
-
 import '../stylesheets/search.css'
 
 function Search() {
@@ -13,7 +12,9 @@ function Search() {
             <button class="btn btn-outline-info" type="submit">Search</button>
           </form>
 
-      </div>
+          <input type ="text" placeholder="Search Games" className ="Prompt" > </input>
+        </div>
+
     )
 }
 
