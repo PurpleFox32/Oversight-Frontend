@@ -4,7 +4,7 @@ const url = ' http://localhost:3001/users';
 
 const API = {
   createUser: (user) => {
-    return axios.post(url, user);
+    return axios.post(`${url}/signup`, user);
   },
   getOneById: (id) => {
     return axios.get(`${url}/${id}`);
