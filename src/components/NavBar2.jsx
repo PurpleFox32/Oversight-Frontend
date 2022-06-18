@@ -1,9 +1,6 @@
 import React from "react"
 import Search from "../components/search";
 
-
-
-
 function NavBar2 () {
     
     return (
@@ -32,7 +29,9 @@ function NavBar2 () {
           <a class="btn btn-outline-info" href="http://localhost:3000/home" tabindex="-1" aria-disabled="true">Logout</a>
         </li>
       </ul>
- 
+
+      <Search />
+
     </div>
     
   </div>

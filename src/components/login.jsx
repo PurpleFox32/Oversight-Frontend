@@ -22,12 +22,12 @@ const Login = () => {
   function submitUser(e) {
     e.preventDefault();
 
-  let parsedId = parseInt(user.id)
+  // let parsedId = parseInt(user.id)
 
-  API.getOneById(parsedId).then(res => {
-    console.log(res)
-    navigate("/profile/"+res.data.id)
-  })
+  // API.getOneById(parsedId).then(res => {
+  //   console.log(res)
+  //   navigate("/profile/"+res.data.id)
+  // })
 
 
  API.getOneByUsername({username: user.username, password: user.password}).then(res => {

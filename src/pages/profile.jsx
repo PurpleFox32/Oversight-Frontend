@@ -17,26 +17,22 @@ const Profile = () => {
     })
 
     let userToken = JSON.parse(localStorage.getItem("userToken"));
-
-
+    
      function fetch() {
       console.log(userToken)
       API.getUserData({token: userToken}).then(response => {
         console.log(response)
       })
     }
-  
 
 fetch();
   }, [])
-
   
   return (
     
     <div className='view-user'>
-      <NavBar2 />
+      <NavBar2/>
       <Rating />
-
     </div>
     
   )
