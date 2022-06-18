@@ -6,14 +6,27 @@ import NavBar2 from '../components/NavBar2'
 
 const Profile = () => {
   const [user, setUser] = useState({});
-  const { id } = useParams();
+  // const { id } = useParams();
 
   useEffect(() => {
-    API.getOneById(id).then(res => {
-      console.log(res);
-      setUser(res.data);
-      console.log(user)
-    })
+    // API.getOneById(id).then(res => {
+    //   console.log(res);
+    //   setUser(res.data);
+    //   console.log(user)
+    // })
+
+    let userToken = JSON.parse(localStorage.getItem("userToken"));
+
+
+     function fetch() {
+      console.log(userToken)
+      API.getUserData({token: userToken}).then(response => {
+        console.log(response)
+      })
+    }
+  
+
+fetch();
   }, [])
 
   

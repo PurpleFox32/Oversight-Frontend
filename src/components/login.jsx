@@ -9,8 +9,7 @@ const Login = () => {
 
   const [ user, setUser ] = useState({
     username: "",
-    password: "",
-    id: ""
+    password: ""
   })
 
 
@@ -23,16 +22,23 @@ function handleChange(event) {
 function submitUser(e) {
   e.preventDefault();
 
-  let parsedId = parseInt(user.id)
+  // let parsedId = parseInt(user.id)
 
-  API.getOneById(parsedId).then(res => {
-    console.log(res)
-    navigate("/profile/"+res.data.id)
-  })
+  // API.getOneById(parsedId).then(res => {
+  //   console.log(res)
+  //   navigate("/profile/"+res.data.id)
+  // })
+
+
+ API.getOneByUsername({username: user.username, password: user.password}).then(res => {
+  console.log(res);
+  localStorage.setItem("userToken", JSON.stringify(res.data))
+  navigate("/profile")
+ })
+
+
   
 }
-
-
   return (
     <form onSubmit={submitUser} class="container">
       <Navbar/>
@@ -55,16 +61,6 @@ function submitUser(e) {
           type="password"
           className="form-control"
           placeholder="Enter password"
-        />
-      </div>
-      <div className="mb-3">
-        <label>Id</label>
-        <input
-          onChange={handleChange}
-          name="id"
-          type="text"
-          className="form-control"
-          placeholder="Enter id"
         />
       </div>
       <div className="mb-3">

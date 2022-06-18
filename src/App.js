@@ -15,19 +15,17 @@ function App() {
   return (
     <div className='auth-wrapper'>
       <div className='auth-inner'>
-      <Outlet/>
+        <Outlet />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-            <Route path='/home' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/profile/:id' element={<Profile />} />
-            <Route path='/reviewBoard' element={<ReviewBoard />} />
-            <Route path='/searchResults' element={<SearchResults />} />
-            <Route path='/sign-in' element={<Login />} />
-            <Route path='/sign-up' element={<Signup />} />
-         
+          <Route exact path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/reviewBoard' element={<ReviewBoard />} />
+          <Route path='/searchResults' element={<SearchResults />} />
+          <Route path='/sign-in' element={<Login />} />
+          <Route path='/sign-up' element={<Signup />} />
         </Routes>
-        
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react"
+import search from '../components/search'
 
 
 
@@ -23,12 +24,6 @@ function NavBar2 () {
           <a class="btn btn-outline-info" href="http://localhost:3000/home" tabindex="-1" aria-disabled="true">Logout</a>
         </li>
       </ul>
-      
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </input>
-        <button class="btn btn-outline-info" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>

@@ -1,7 +1,9 @@
 import React from 'react'
 import Search from './search'
+import games from '../games.json'
 
 const NavBar3 = () => {
+
 
   return (
     <div>
@@ -24,7 +26,7 @@ const NavBar3 = () => {
         </li>
       </ul>
       
-      <Search />
+      {/* <Search /> */}
     </div>
   </div>
 </nav>
