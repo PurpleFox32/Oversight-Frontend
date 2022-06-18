@@ -1,5 +1,6 @@
 import React from 'react'
 import Search from './search'
+
 import '../stylesheets/NavBar.css'
 
 const NavBar3 = () => {
