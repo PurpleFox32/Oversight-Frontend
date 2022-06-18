@@ -29,7 +29,7 @@ const NavBar3 = () => {
         </li>
       </ul>
       
-      {/* <Search /> */}
+      
     </div>
   </div>
 </nav>
