@@ -12,7 +12,7 @@ const SignUp = () => {
     username: "",
     email: "",
     password: "",
-    confirmPassword: ""
+    //confirmPassword: ""
   })
 
   function handleChange(e) {
@@ -26,9 +26,6 @@ const SignUp = () => {
       navigate("/profile/" + res.data.id)
     })
   }
-
-
-
 
   return (
     <div>
@@ -69,7 +66,7 @@ const SignUp = () => {
           />
 
         </div>
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <label>Confirm Password</label>
           <input
             onChange={handleChange}
@@ -79,7 +76,7 @@ const SignUp = () => {
             placeholder="Confirm password"
           />
 
-        </div>
+        </div> */}
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
             Sign Up
