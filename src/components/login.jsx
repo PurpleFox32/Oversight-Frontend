@@ -9,8 +9,7 @@ const Login = () => {
 
   const [user, setUser] = useState({
     username: "",
-    password: "",
-    id: ""
+    password: ""
   })
 
 
@@ -23,23 +22,50 @@ const Login = () => {
   function submitUser(e) {
     e.preventDefault();
 
-    let parsedId = parseInt(user.id)
+  // let parsedId = parseInt(user.id)
 
-    API.getOneById(parsedId).then(res => {
-      console.log(res)
-      navigate("/profile/" + res.data.id)
-    })
-
-  }
+  // API.getOneById(parsedId).then(res => {
+  //   console.log(res)
+  //   navigate("/profile/"+res.data.id)
+  // })
 
 
+ API.getOneByUsername({username: user.username, password: user.password}).then(res => {
+  console.log(res);
+  localStorage.setItem("userToken", JSON.stringify(res.data))
+  navigate("/profile")
+ })
+
+
+  
+}
   return (
     <div>
-      <Navbar />
-      <form onSubmit={submitUser} class="container">
-        <h3>Login</h3>
-        <div className="mb-3">
-          <label>Username</label>
+    <form onSubmit={submitUser} class="container">
+      <Navbar/>
+      <h3>Sign In</h3>
+      <div className="mb-3">
+        <label>Username</label>
+        <input
+          onChange={handleChange}
+          name="username"
+          type="text"
+          className="form-control"
+          placeholder="Username"
+        />
+      </div>
+      <div className="mb-3">
+        <label>Password</label>
+        <input
+          onChange={handleChange}
+          name="password"
+          type="password"
+          className="form-control"
+          placeholder="Enter password"
+        />
+      </div>
+      <div className="mb-3">
+        {/* <div className="custom-control custom-checkbox">
           <input
             onChange={handleChange}
             name="username"
@@ -47,39 +73,7 @@ const Login = () => {
             className="form-control"
             placeholder="Username"
           />
-        </div>
-        <div className="mb-3">
-          <label>Password</label>
-          <input
-            onChange={handleChange}
-            name="password"
-            type="password"
-            className="form-control"
-            placeholder="Enter password"
-          />
-        </div>
-        <div className="mb-3">
-          <label>Id</label>
-          <input
-            onChange={handleChange}
-            name="id"
-            type="text"
-            className="form-control"
-            placeholder="Enter id"
-          />
-        </div>
-        <div className="mb-3">
-          <div className="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              className="custom-control-input"
-              id="customCheck1"
-            />
-            <label className="custom-control-label" htmlFor="customCheck1">
-              Remember me
-            </label>
-          </div>
-        </div>
+        </div> */}
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
 
@@ -89,6 +83,7 @@ const Login = () => {
         <p className="forgot-password text-right">
           Forgot <a href="#">password?</a>
         </p>
+        </div>
       </form>
     </div>
   );
