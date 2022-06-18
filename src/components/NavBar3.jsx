@@ -1,5 +1,6 @@
 import React from 'react'
 import Search from './search'
+
 import '../stylesheets/NavBar.css'
 
 const NavBar3 = () => {
@@ -28,7 +29,7 @@ const NavBar3 = () => {
         </li>
       </ul>
       
-      {/* <Search /> */}
+      
     </div>
   </div>
 </nav>
