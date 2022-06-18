@@ -39,7 +39,7 @@ const Rating = () => {
         the series has seen games set in the midst of the Cold War, futuristic worlds, and outer space. 
         </p>
         <p class="card-text">
-          <small class="text-muted">Last updated 3 mins ago</small>
+          <small class="text-muted">Last updated 3 minutes ago</small>
         </p>
       </div>
 

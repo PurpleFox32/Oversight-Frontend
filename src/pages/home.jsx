@@ -1,12 +1,16 @@
 import React from "react";
 import NavBar3 from "../components/NavBar3";
+import Search from "../components/search";
 import "../stylesheets/home.css";
 
 const Home = () => {
     return (
         <div>
-            <NavBar3 />
+           <NavBar3 />
+         
+            
             <div class="container">
+            
                 <div class="d-flex justify-content-center">
                     <div class="card d-flex position-relative flex-column">
                         <div class='imgContainer'>
