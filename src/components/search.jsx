@@ -1,12 +1,9 @@
 import React from "react";
-<<<<<<< HEAD
 import { useState } from "react";
 import './search.css';
 import gamesData from '../UTILS/games.json';
 
-=======
 import '../stylesheets/search.css'
->>>>>>> main
 
 function Search() {
 const [searchTerm, setSearchTerm] = useState('');

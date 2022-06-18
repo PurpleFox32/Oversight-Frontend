@@ -1,10 +1,7 @@
 import React from 'react'
 import Search from './search'
-<<<<<<< HEAD
 import games from '../games.json'
-=======
 import '../stylesheets/NavBar.css'
->>>>>>> main
 
 const NavBar3 = () => {
 
