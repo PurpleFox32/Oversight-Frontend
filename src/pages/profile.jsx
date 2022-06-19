@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import API from '../UTILS/API';
-import NavBar2 from '../components/NavBar2'
+import NavBar from '../components/NavBar2'
 import Rating from '../components/Rating'
 
 const Profile = () => {
@@ -31,7 +31,7 @@ fetch();
   return (
     
     <div className='view-user'>
-      <NavBar2/>
+      <NavBar/>
       <Rating />
     </div>
     

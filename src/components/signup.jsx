@@ -23,7 +23,7 @@ const SignUp = () => {
     e.preventDefault();
     API.createUser(user).then(res => {
       console.log(res)
-      navigate("/profile/" + res.data.id)
+      navigate("/login")
     })
   }
 

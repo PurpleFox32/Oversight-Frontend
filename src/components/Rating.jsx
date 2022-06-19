@@ -19,7 +19,6 @@ const Rating = () => {
 
   return (
     <div>
-       <h2> Welcome {user.username}  </h2>
     <div class="game-info">
       <div>
       <div class="card mb-3">
@@ -37,9 +36,6 @@ const Rating = () => {
         <p class="card-text">
         Call of Duty is a first-person shooter video game franchise published by Activision. Starting out in 2003, it first focused on games set in World War II. Over time, 
         the series has seen games set in the midst of the Cold War, futuristic worlds, and outer space. 
-        </p>
-        <p class="card-text">
-          <small class="text-muted">Last updated 3 minutes ago</small>
         </p>
       </div>
 
