@@ -2,7 +2,7 @@
 
 
 .container {
-    margin-top: 10em;
+    margin-top: 2em;
 }
 
 .container .card {
@@ -12,7 +12,7 @@
     padding: 20px 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
-    margin-bottom: 23.8em
+    margin-bottom: 2em
 }
 
 .container .card:hover {
