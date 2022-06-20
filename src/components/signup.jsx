@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import API from '../UTILS/API';
 import { useNavigate } from "react-router-dom";
 import "../stylesheets/signup.css";
-import NavBar3 from "./NavBar3";
+import NavBar from "./NavBar1";
 
 
 const SignUp = () => {
@@ -29,7 +29,7 @@ const SignUp = () => {
 
   return (
     <div>
-      <NavBar3 />
+      <NavBar />
       <form onSubmit={submitUser} class='container form-control-sm'>
         <h3>Sign Up</h3>
         <div className="mb-3">

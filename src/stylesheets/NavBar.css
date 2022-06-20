@@ -8,7 +8,12 @@
     max-width: 5em;
 }
 
-#about, #signup, #login, #logout {
+#about, #signup, #login, #logout, #cancel {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+#btns {
+    display: flex;
+    justify-content: flex-end;
 }
