@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import API from '../UTILS/API';
 import { useNavigate } from "react-router-dom";
-import NavBar3 from "./NavBar3";
+import NavBar from "./NavBar1";
 
 
 const Login = () => {
@@ -10,11 +10,11 @@ const Login = () => {
   const [user, setUser] = useState({
     username: "",
     password: ""
-  })
+  });
 
 
   function handleChange(event) {
-    setUser({ ...user, [event.target.name]: event.target.value })
+    setUser({ ...user, [event.target.name]: event.target.value });
   }
 
 
@@ -24,16 +24,16 @@ const Login = () => {
 
     API.getOneByUsername({ username: user.username, password: user.password }).then(res => {
       console.log(res);
-      localStorage.setItem("userToken", JSON.stringify(res.data))
-      navigate("/profile")
-    })
+      localStorage.setItem("userToken", JSON.stringify(res.data));
+      navigate("/profile");
+    });
 
 
 
   }
   return (
     <div>
-      <NavBar3 />
+      <NavBar />
       <form onSubmit={submitUser} class="container">
         <h3>Login</h3>
         <div className="mb-3">
