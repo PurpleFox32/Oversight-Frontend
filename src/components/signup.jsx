@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import API from '../UTILS/API';
 import { useNavigate } from "react-router-dom";
-import Navbar from "../component/navbar";
 import "../stylesheets/signup.css";
+import NavBar3 from "./NavBar3";
 
 
 const SignUp = () => {
@@ -29,7 +29,7 @@ const SignUp = () => {
 
   return (
     <div>
-      <Navbar />
+      <NavBar3 />
       <form onSubmit={submitUser} class='container form-control-sm'>
         <h3>Sign Up</h3>
         <div className="mb-3">

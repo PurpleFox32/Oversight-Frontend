@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import API from '../UTILS/API';
 import { useNavigate } from "react-router-dom";
-import Navbar from "../component/navbar";
+import NavBar3 from "./NavBar3";
 
 
 const Login = () => {
@@ -33,7 +33,7 @@ const Login = () => {
   }
   return (
     <div>
-      <Navbar />
+      <NavBar3 />
       <form onSubmit={submitUser} class="container">
         <h3>Login</h3>
         <div className="mb-3">
