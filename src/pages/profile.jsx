@@ -25,8 +25,9 @@ const Profile = () => {
       })
     }
 
-fetch();
-  }, [])
+ fetch();
+   }, []
+)
   
   return (
     
