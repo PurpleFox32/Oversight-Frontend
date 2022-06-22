@@ -10,11 +10,11 @@ const Rating = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    API.getOneById(id).then(res => {
-      console.log(res);
-      setUser(res.data);
-      console.log(user)
-    })
+    // API.getOneById(id).then(res => {
+    //   console.log(res);
+    //   setUser(res.data);
+    //   console.log(user)
+    // })
   })
 
   return (

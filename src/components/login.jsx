@@ -23,8 +23,8 @@ const Login = () => {
     e.preventDefault();
 
     API.getOneByUsername({ username: user.username, password: user.password }).then(res => {
-      console.log(res);
-      localStorage.setItem("userToken", JSON.stringify(res.data));
+      console.log(res.data);
+      localStorage.setItem("userToken", JSON.stringify(res.data.jwt));
       navigate("/profile");
     });
 

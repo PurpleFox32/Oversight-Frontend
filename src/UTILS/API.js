@@ -13,7 +13,7 @@ const API = {
     return axios.post(`${url}/login`, user);
   },
   getUserData: (token) => {
-    return axios.post(`${url}/profile`, token);
+    return axios.get(`${url}/profile/${token}`);
   },
 };
 
