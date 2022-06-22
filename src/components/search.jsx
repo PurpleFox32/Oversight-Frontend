@@ -11,8 +11,6 @@ function Search() {
                 
             <button class="btn btn-outline-info" type="submit">Search</button>
           </form>
-
-          <input type ="text" placeholder="Search Games" className ="Prompt" > </input>
         </div>
 
     )

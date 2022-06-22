@@ -8,6 +8,7 @@ const about = () => {
 
     <div>
       <NavBar3 />
+  
       <div class='logostyle' >
         <img src='OverSight-Logo.png' alt='logo' id='logo' />
         <h2>About This Project</h2>
