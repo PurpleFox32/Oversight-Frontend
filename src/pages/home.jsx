@@ -11,7 +11,7 @@ const Home = () => {
             
             <div class="container">
             
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center flex-wrap">
                     <div class="card d-flex position-relative flex-column">
                         <div class='imgContainer'>
                             <img src='https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/kronos/common/social-share/social-share-image.jpg' alt=''/>
