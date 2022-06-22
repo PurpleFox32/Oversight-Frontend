@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import API from '../UTILS/API';
 import NavBar from '../components/NavBar2'
 import Rating from '../components/Rating'
+import List from '../components/List';
 
 const Profile = () => {
   const [user, setUser] = useState({});
@@ -29,13 +30,13 @@ const Profile = () => {
  fetch();
    }, []
 )
-  
+
   return (
     
     <div className='view-user'>
       <NavBar/>
-      <Rating />
-      <h1>{user.email}</h1>
+      <Rating/>
+      <h1> {user.email}</h1>
     </div>
     
   )
