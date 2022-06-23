@@ -1,5 +1,6 @@
 import React from "react"
 import '../stylesheets/NavBar.css'
+import Search from "./search";
 
 
 const NavBar2 = () => {
@@ -20,6 +21,7 @@ const NavBar2 = () => {
               <a class="btn btn-outline-info" href="http://localhost:3000/home" tabindex="-1" aria-disabled="true" id="logout">Logout</a>
             </li>
           </ul>
+          <Search/>
         </div>
       </div>
     </nav>

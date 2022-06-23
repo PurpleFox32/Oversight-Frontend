@@ -29,6 +29,7 @@ const NavBar3 = () => {
           <a class="btn btn-outline-info" href="http://localhost:3000/login" tabindex="-1" aria-disabled="true" id='login' >Login</a>
         </li>
       </ul>
+      <Search/>
       
       
       
