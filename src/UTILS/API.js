@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const url = ' http://localhost:3001/users';
+const url2 = ' http://localhost:3001/post';
 
 const API = {
   createUser: (user) => {
@@ -14,6 +15,12 @@ const API = {
   },
   getUserData: (token) => {
     return axios.get(`${url}/profile/${token}`);
+  },
+  // userPost: (token) => {
+  //   return axios.get(`${url2}/${token}`);
+  // },
+  createPost: (data, token) => {
+    return axios.post(`${url2}/${token}`, data);
   },
 };
 
