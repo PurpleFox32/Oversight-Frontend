@@ -34,6 +34,7 @@ const Profile = () => {
    }, []
 )
 
+
   return (
     
     <div className='view-user'>

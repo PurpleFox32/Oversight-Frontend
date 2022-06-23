@@ -9,13 +9,38 @@ const Rating = () => {
   const [user, setUser] = useState({});
   const { id } = useParams();
 
+  console.log(setBody.data);
+
   useEffect(() => {
     // API.getOneById(id).then(res => {
     //   console.log(res);
     //   setUser(res.data);
     //   console.log(user)
     // })
-  })
+
+    let userToken = JSON.parse(localStorage.getItem("userToken"));
+
+    function fetch() {
+      console.log(userToken)
+      API.getUserData(userToken).then(response => {
+        console.log(response)
+        setUser(response.data)
+      })
+    }
+
+    fetch();
+  }, []
+  )
+
+  function submitReview(e) {
+    e.preventDefault();
+    console.log(body);
+    let userToken = JSON.parse(localStorage.getItem("userToken"));
+
+    API.createPost({body}, userToken).then(res => {
+      console.log(res)
+    })
+  }
 
   return (
     <div>
@@ -46,7 +71,7 @@ const Rating = () => {
   
 
     <div className="create">
-      <form>
+      <form onSubmit={submitReview}>
         <label>Review</label>
         <textarea
           required
