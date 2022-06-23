@@ -11,7 +11,7 @@ import profileList from '../components/profileList';
 
 const Profile = () => {
   const [user, setUser] = useState({});
-   const { id } = useParams();
+  const { id } = useParams();
 
   useEffect(() => {
     // API.getOneById(id).then(res => {
@@ -21,8 +21,8 @@ const Profile = () => {
     // })
 
     let userToken = JSON.parse(localStorage.getItem("userToken"));
-    
-     function fetch() {
+
+    function fetch() {
       console.log(userToken)
       API.getUserData(userToken).then(response => {
         console.log(response)
@@ -30,34 +30,34 @@ const Profile = () => {
       })
     }
 
- fetch();
-   }, []
-)
+    fetch();
+  }, []
+  )
 
 
   return (
-    
+
     <div className='view-user'>
-      <NavBar/>
+      <NavBar />
 
 
       <h1> Welcome Username {user.userName}</h1>
-      <br/>
+      <br />
       <h3>Your most current game reviews</h3>
       <hr
-      style={{
-        color:'#32FBE2',
-        height:'4px'
-      }}/>
+        style={{
+          color: '#32FBE2',
+          height: '4px'
+        }} />
 
       <div class="list-group">
-          <a href="/CurrentReview" class="list-group-item list-group-item-action"> Fifa </a>
-          <a href="" class="list-group-item list-group-item-action">Mario</a>
-          <a href="#" class="list-group-item list-group-item-action">Call of Duty </a>
-</div>
-      
+        <a href="/CurrentReview" class="list-group-item list-group-item-action"> Fifa </a>
+        <a href="" class="list-group-item list-group-item-action">Mario</a>
+        <a href="#" class="list-group-item list-group-item-action">Call of Duty </a>
+      </div>
+
     </div>
-    
+
   )
 }
 
