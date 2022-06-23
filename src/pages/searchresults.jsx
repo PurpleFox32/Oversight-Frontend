@@ -14,7 +14,9 @@ function SearchResults() {
 
   return (
     <div>
+      
     <NavBar3/>
+    
     <div className="main">
       <h1>List of Video Games</h1>
       <br/>
