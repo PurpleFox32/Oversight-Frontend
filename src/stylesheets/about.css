@@ -8,7 +8,9 @@
         0 0 9px 6px #8c00ff,
         0 0 12px 9px rgb(225, 0, 255);
 }
-
+.logostyle h2{
+    text-align: center;
+}
 .logostyle{
     text-align: center;
     justify-content: center;

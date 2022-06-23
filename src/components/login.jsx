@@ -25,7 +25,7 @@ const Login = () => {
     API.getOneByUsername({ username: user.username, password: user.password }).then(res => {
       console.log(res.data);
       localStorage.setItem("userToken", JSON.stringify(res.data.jwt));
-      navigate("/profile");
+      navigate("/searchResults");
     });
 
 
