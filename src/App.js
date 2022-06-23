@@ -9,6 +9,9 @@ import About from './pages/about';
 import Profile from './pages/profile';
 import SearchResults from './pages/searchresults';
 import { Outlet } from 'react-router-dom';
+import ReviewBoard from './pages/reviewBoard';
+import CurrentReview from './pages/CurrentReview';
+
 
 function App() {
   return (
@@ -23,6 +26,8 @@ function App() {
           <Route path='/searchResults' element={<SearchResults />} />
           <Route path='/login' element={<Login />} />
           <Route path='/sign-up' element={<Signup />} />
+          <Route path='/reviewBoard' element={<ReviewBoard/>}/>
+          <Route path='/CurrentReview' element={<CurrentReview/>}/>
         </Routes>
       </div>
     </div>
