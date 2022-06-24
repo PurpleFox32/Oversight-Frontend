@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import API from '../UTILS/API';
 import "../stylesheets/Rating.css";
+import "../games.json"
 
 
 const Rating = () => {

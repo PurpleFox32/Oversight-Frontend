@@ -1,13 +1,15 @@
 import React from 'react'
+import Data from "../UTILS/games.json"
 
-const searchbar = () => {
+function searchBar  () {
   return (
     <div>
-      <h2>Test</h2>
+      <input placeholder="Enter Post Title"/>
     </div>
   )
 }
 
-export default searchbar
+
+export default searchBar
 
 

@@ -49,6 +49,21 @@ const Profile = () => {
           color: '#32FBE2',
           height: '4px'
         }} />
+          <div>
+
+      <div className="view-review">
+        <h3>Game Title: Call Of Duty</h3>
+        <p>Game Image?</p>
+        <p>Review Body:
+            This game lags and sucks!
+        </p>
+        
+        <button className='btn'>Update</button>
+        <button className='btn'>Delete</button>
+      </div>
+    </div>
+  
+
 
       <div class="list-group">
         <a href="/CurrentReview" class="list-group-item list-group-item-action"> Fifa </a>

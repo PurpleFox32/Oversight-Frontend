@@ -4,6 +4,7 @@ import List from '../components/List';
 import Search from '../components/search';
 
 
+
 function SearchResults() {
   const [inputText, setInputText] = useState("");
   let inputHandler = (e) => {
@@ -14,9 +15,8 @@ function SearchResults() {
 
   return (
     <div>
-      
-    <NavBar3/>
     
+    <NavBar3/>
     <div className="main">
       <h1>List of Video Games</h1>
       <br/>
