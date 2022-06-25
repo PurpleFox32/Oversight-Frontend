@@ -29,3 +29,4 @@ const NavBar1 = () => {
 }
 
 export default NavBar1
+

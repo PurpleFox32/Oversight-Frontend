@@ -1,12 +1,9 @@
-import React from "react"
-import '../stylesheets/NavBar.css'
-import Search from "./search";
+import React from 'react'
 
-
-const NavBar2 = () => {
-
+const NavBar4 = () => {
   return (
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <div>
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="http://localhost:3000/home">
           <img src="OverSight-Logo.png" alt="Logo" width="24px" height="24px" class="logo" /> verSight
@@ -25,12 +22,14 @@ const NavBar2 = () => {
             </li>
           </ul>
           <Search/>
+        
         </div>
       </div>
     </nav>
 
 
-  );
+    </div>
+  )
 }
 
-export default NavBar2
+export default NavBar4
