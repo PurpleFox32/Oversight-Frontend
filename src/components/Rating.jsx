@@ -80,6 +80,7 @@ const Rating = () => {
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
         <button>Add Review</button>
+        
       </form>
     </div>
     </div>

@@ -20,7 +20,7 @@ function App() {
         <Outlet />
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/home' element={<Home />} />
+          <Route path='/home' element={<Home />} About />
           <Route path='/about' element={<About />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/searchResults' element={<SearchResults />} />
