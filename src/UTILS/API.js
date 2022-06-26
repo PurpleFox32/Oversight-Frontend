@@ -22,6 +22,7 @@ const API = {
   createPost: (data, token) => {
     return axios.post(`${url2}/${token}`, data);
   },
+  getPost: () => {},
 };
 
 export default API;

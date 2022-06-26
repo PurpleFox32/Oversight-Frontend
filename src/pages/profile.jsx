@@ -41,7 +41,7 @@ const Profile = () => {
       <NavBar />
 
 
-      <h1> Welcome Username {user.userName}</h1>
+      <h1> Welcome {user.username}</h1>
       <br />
       <h3>Your most current game reviews</h3>
       <hr
