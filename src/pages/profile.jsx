@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import API from '../UTILS/API';
+import Data from '../review.json'
 import NavBar from '../components/NavBar2'
 import Rating from '../components/Rating'
 import profileList from '../components/profileList';
@@ -41,7 +42,7 @@ const Profile = () => {
       <NavBar />
 
 
-      <h1> Welcome Username {user.userName}</h1>
+      <h1> Welcome {user.username}</h1>
       <br />
       <h3>Your most current game reviews</h3>
       <hr
