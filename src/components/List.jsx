@@ -1,8 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import '../stylesheets/List.css'
+import '../stylesheets/List.css';
 import NavBar from './NavBar2';
-
 
 function List() {
   const [games, setGames] = useState([]);
@@ -30,7 +29,7 @@ function List() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default List
+export default List;
