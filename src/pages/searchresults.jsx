@@ -14,15 +14,8 @@ function SearchResults() {
 
   return (
     <div>
-      <NavBar1 />
-      <div className='main'>
-        <h1>List of Video Games</h1>
-        <br />
-        <div className='search'>
-          <div>
-            <List />
-          </div>
-        </div>
+      <div>
+        <List />
       </div>
     </div>
   );
