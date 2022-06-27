@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const url = ' http://localhost:3001/users';
 const url2 = ' http://localhost:3001/post';
+const url3 = 'http://localhost3001/games';
 
 const API = {
   createUser: (user) => {
@@ -22,6 +23,10 @@ const API = {
   createPost: (data, token) => {
     return axios.post(`${url2}/${token}`, data);
   },
+  getPost: () => {},
+  // getGameList: (games) => {
+  //   return axios.get(`${url3}/list`, games);
+  // },
 };
 
 export default API;

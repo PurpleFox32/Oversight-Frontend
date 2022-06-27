@@ -10,12 +10,12 @@ const ReviewBoard = () => {
   <div>
     <div className="navBar">
       <NavBar2 />
-     <Rating/>
+     
      
       
-      
+    
     </div>
-   <div className="form"> 
+   <div className="form"> <Rating/>
     </div>
   
 

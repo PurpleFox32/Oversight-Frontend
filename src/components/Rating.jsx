@@ -10,7 +10,9 @@ const Rating = () => {
   const [user, setUser] = useState({});
   const { id } = useParams();
 
-  console.log(setBody.data);
+
+
+  //console.log(setBody.data);
 
   useEffect(() => {
     // API.getOneById(id).then(res => {
@@ -24,9 +26,13 @@ const Rating = () => {
     function fetch() {
       console.log(userToken)
       API.getUserData(userToken).then(response => {
-        console.log(response)
+        console.log(response.data)
         setUser(response.data)
       })
+
+      
+
+
     }
 
     fetch();
@@ -91,6 +97,9 @@ const Rating = () => {
 
         
       </form>
+      <div>
+          <h1>{user.username}</h1> 
+      </div>
     </div>
     </div>
     
