@@ -1,3 +1,4 @@
+
 import { React, useState } from 'react';
 import data from '../games.json'
 import '../stylesheets/List.css'
@@ -30,3 +31,5 @@ function List(props) {
 }
 
 export default List
+
+

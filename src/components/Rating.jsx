@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import API from '../UTILS/API';
 import "../stylesheets/Rating.css";
-import "../games.json"
+//import "../games.json"
 
 
 const Rating = () => {
@@ -37,7 +37,9 @@ const Rating = () => {
 
     fetch();
   }, []
+  
   )
+ 
 
   function submitReview(e) {
     e.preventDefault();
@@ -46,6 +48,8 @@ const Rating = () => {
 
     API.createPost({body}, userToken).then(res => {
       console.log(res)
+    }).then(()=>{
+      alert("succeful")
     })
   }
 
@@ -64,7 +68,7 @@ const Rating = () => {
     </div>
     <div class="col-md-5">
       <div class="card-body">
-        <h5 class="card-title">Game Title </h5>
+        <h5 class="card-title"></h5>
         <p class="card-text">
         Call of Duty is a first-person shooter video game franchise published by Activision. Starting out in 2003, it first focused on games set in World War II. Over time, 
         the series has seen games set in the midst of the Cold War, futuristic worlds, and outer space. 
@@ -75,17 +79,22 @@ const Rating = () => {
   </div>
   </div>
 </div>
-  
+    
+
+
+  </div>
 
     <div className="create">
-      <form onSubmit={submitReview}>
+      <form>
         <label>Review</label>
         <textarea
           required
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
-        <button>Add Review</button>
+        <button onClick={submitReview}>Add Review</button>
+        
+
         
       </form>
       <div>
@@ -93,7 +102,7 @@ const Rating = () => {
       </div>
     </div>
     </div>
-    </div>
+    
    
   );
 };
