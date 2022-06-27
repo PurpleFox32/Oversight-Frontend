@@ -4,7 +4,9 @@ import '../stylesheets/List.css';
 import NavBar from './NavBar2';
 import { Link } from 'react-router-dom';
 
-function List(props) {
+
+function List() {
+
   const [games, setGames] = useState([]);
 
   useEffect(() => {
@@ -28,10 +30,20 @@ function List(props) {
   return (
     <div>
       <NavBar />
-
       <div className='row'>
         <div className='gameList'>
           {games === null ? <div>loading</div> : getGames()}
+
+      {/* <div className="row">
+        <div>
+          {games.map((game) => (
+            <div key={game.GameId} id='listItem'>
+              <img src={game.GameThumbnail} />
+              <h1>{game.Name}</h1>
+              <h3>{game.Description}</h3>
+            </div> 
+          ))} */}
+
         </div>
       </div>
     </div>
