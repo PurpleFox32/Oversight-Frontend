@@ -73,16 +73,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <h1> Games </h1>
-
-      <div>
-        <ul>
-          {games.map((game) => (
-            <li key={game.GameId}>{game.Name}</li>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 };
