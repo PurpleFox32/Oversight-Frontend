@@ -4,8 +4,8 @@ import '../stylesheets/List.css'
 import NavBar from './NavBar2';
 
 
-function List(props) {
-  const [games, setGames] = useState({});
+function List() {
+  const [games, setGames] = useState([]);
 
   useEffect(() => {
     axios.get('http://localhost:3001/games/list').then((response) => {
@@ -19,7 +19,7 @@ function List(props) {
       <NavBar />
 
       <div className="row">
-        {/* <div>
+        <div>
           {games.map((game) => (
             <div key={game.GameId} id='listItem'>
               <img src={game.GameThumbnail} />
@@ -27,7 +27,7 @@ function List(props) {
               <h3>{game.Description}</h3>
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   )
