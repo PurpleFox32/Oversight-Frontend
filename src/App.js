@@ -11,6 +11,7 @@ import SearchResults from './pages/searchresults';
 import { Outlet } from 'react-router-dom';
 import ReviewBoard from './pages/reviewBoard';
 import CurrentReview from './pages/CurrentReview';
+import List from './components/List';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path='/sign-up' element={<Signup />} />
           <Route path='/reviewBoard' element={<ReviewBoard/>}/>
           <Route path='/CurrentReview' element={<CurrentReview/>}/>
+          <Route path='games' element={<List/>}/>
         </Routes>
       </div>
     </div>
