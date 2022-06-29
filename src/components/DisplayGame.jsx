@@ -4,20 +4,45 @@ import API from '../UTILS/API';
 
 const DisplayGame = () => {
   const params = useParams();
-  const [post, setPost] = useState([]);
+  const [game, setGame] = useState([]);
+  const [newPost, setNewPost] = useState('');
 
   useEffect(() => {
     function getGame() {
-      API.getPost(params.gameId).then((res) => {
+      API.getGame(params.gameId).then((res) => {
         console.log(res.data);
-        setPost(res.data);
+        setGame(res.data);
       });
     }
+
+    //get game that was selected and display all post.
+    //user should then be able to add a post(review)
 
     getGame();
   }, []);
 
-  return <div>Hello</div>;
+  const handleChange = (e) => {
+    setNewPost(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    API.createPost2(game.GameId, newPost).then((response) => {
+      console.log(response);
+    });
+  };
+
+  return (
+    <div>
+      <img src={game.GameThumbnail} />
+      <h1>{game.Name}</h1>
+      <form onSubmit={handleSubmit}>
+        <input onChange={handleChange} placeholder='type a review' />
+        <button type='submit'>submit</button>
+      </form>
+    </div>
+  );
 };
 
 export default DisplayGame;
