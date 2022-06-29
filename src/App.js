@@ -29,7 +29,8 @@ function App() {
           <Route path='/sign-up' element={<Signup />} />
           <Route path='/reviewBoard' element={<ReviewBoard />} />
           <Route path='/CurrentReview' element={<CurrentReview />} />
-          <Route path='games' element={<List />} />
+          <Route path='/games' element={<List />} />
+          <Route path='/games/:search' element={<List />} />
           <Route path='/oneGame/:gameId' element={<DisplayGame />} />
         </Routes>
       </div>

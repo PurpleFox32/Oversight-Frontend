@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import NavBar2 from './NavBar2';
 import API from '../UTILS/API';
 
 const DisplayGame = () => {
@@ -35,6 +36,7 @@ const DisplayGame = () => {
 
   return (
     <div>
+      <NavBar2 />
       <img src={game.GameThumbnail} />
       <h1>{game.Name}</h1>
       <form onSubmit={handleSubmit}>

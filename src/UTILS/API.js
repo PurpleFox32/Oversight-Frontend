@@ -27,7 +27,7 @@ const API = {
     return axios.get(`${url3}/${id}`);
   },
   createPost2: (id, post) => {
-    return axios.post(`${url2}/create/${id}`, post);
+    return axios.post(`${url2}/create/${id}`, { post: post });
   },
 };
 
