@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import NavBar2 from './NavBar2';
 import API from '../UTILS/API';
+import '../stylesheets/bootstrap.css'
 
 const DisplayGame = () => {
   const params = useParams();
@@ -43,7 +44,7 @@ const DisplayGame = () => {
         <input onChange={handleChange} placeholder='type a review' />
         <button type='submit'>submit</button>
       </form>
-    </div>
+      </div>
   );
 };
 
