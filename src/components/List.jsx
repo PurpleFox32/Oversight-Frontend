@@ -23,7 +23,7 @@ function List() {
 
   function getGames() {
     return games.map((game) => (
-      <div key={game.GameId} id='listItem'>
+      <div key={game.GameId} id='listItem'  >
         <img src={game.GameThumbnail} />
         <h1>{game.Name}</h1>
         <h3>{game.Description}</h3>
@@ -36,7 +36,7 @@ function List() {
     <div>
       <NavBar2 />
       <div className='row'>
-        <div className='gameList'>
+        <div className='gameList flex-wrap'>
           {games === null ? <div>loading</div> : getGames()}
 
           {/* <div className="row">

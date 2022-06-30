@@ -20,3 +20,8 @@ h1{
 h3{
     margin-bottom:0.8em;
 }
+.gameList{
+    display: flex;
+    justify-content: center;
+
+}
