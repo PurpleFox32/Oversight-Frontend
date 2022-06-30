@@ -8,6 +8,7 @@ const DisplayGame = () => {
   const params = useParams();
   const [game, setGame] = useState([]);
   const [newPost, setNewPost] = useState('');
+  const [posts, setPost] = useState([]);
 
   useEffect(() => {
     function getGame() {
@@ -17,10 +18,18 @@ const DisplayGame = () => {
       });
     }
 
+    function getPosts() {
+      API.getPosts(params.postId).then((res) => {
+        console.log(res.data);
+        setPost(res.data);
+      })
+    }
+
     //get game that was selected and display all post.
     //user should then be able to add a post(review)
 
     getGame();
+    getPosts();
   }, []);
 
   const handleChange = (e) => {
@@ -40,9 +49,10 @@ const DisplayGame = () => {
       <NavBar2 />
       <img src={game.GameThumbnail} />
       <h1>{game.Name}</h1>
+      <p>{posts.post}</p>
       <form onSubmit={handleSubmit}>
         <input onChange={handleChange} placeholder='type a review' />
-        <button type='submit'>submit</button>
+        <button type='submit'>Submit</button>
       </form>
       </div>
   );
