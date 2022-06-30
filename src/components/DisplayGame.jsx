@@ -19,7 +19,7 @@ const DisplayGame = () => {
     }
 
     function getPosts() {
-      API.getPosts(params.postId).then((res) => {
+      API.getPosts(params.gameId).then((res) => {
         console.log(res.data);
         setPost(res.data);
       })
@@ -29,8 +29,8 @@ const DisplayGame = () => {
     //user should then be able to add a post(review)
 
     getGame();
-    getPosts();
-  }, []);
+    getPosts([]);
+  }, [params.gameId]);
 
   const handleChange = (e) => {
     setNewPost(e.target.value);
@@ -44,17 +44,27 @@ const DisplayGame = () => {
     });
   };
 
+  function getPosts() {
+    return posts.map((posts) => (
+      <div key={posts.gameId} id='list'>
+        <p>{posts.post}</p>
+      </div>
+    ))
+  }
+
   return (
     <div>
       <NavBar2 />
-      <img src={game.GameThumbnail} />
+      <img src={game.GameThumbnail} alt='thumbnail' />
       <h1>{game.Name}</h1>
-      <p>{posts.post}</p>
+      <div className='postList flex-wrap'>
+        {posts === null ? <div>Loading</div> : getPosts()}
+      </div>
       <form onSubmit={handleSubmit}>
         <input onChange={handleChange} placeholder='type a review' />
         <button type='submit'>Submit</button>
       </form>
-      </div>
+    </div>
   );
 };
 
