@@ -19,11 +19,18 @@ function List() {
       console.log(response);
       setGames(response.data);
     });
+    const handler = function (e) {
+      setGames(e.detail);
+    };
+    window.addEventListener('search', handler, false);
+    return function cleanup() {
+      window.removeEventListener('search', handler, false);
+    };
   }, []);
 
   function getGames() {
     return games.map((game) => (
-      <div key={game.GameId} id='listItem'  >
+      <div key={game.GameId} id='listItem'>
         <img src={game.GameThumbnail} />
         <h1>{game.Name}</h1>
         <h3>{game.Description}</h3>
