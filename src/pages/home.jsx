@@ -17,21 +17,21 @@ const Home = () => {
     return games.map((game) => (
       <div key={game.GameId} >
         <div class="container">
-      <div class='d-flex justify-content-center flex-wrap'>
-           <div class='card d-flex position-relative flex-column'>
-            <div class="imgContainer">
-        <img src={game.GameThumbnail} />
+          <div class='d-flex justify-content-center flex-wrap'>
+            <div class='card d-flex position-relative flex-column'>
+              <div class="imgContainer" >
+                <img src={game.GameThumbnail} />
+              </div>
+              <div class="content">
+                <h1 class="text-primary">{game.Name}</h1>
+                <h3 class="text-info">{game.Description}</h3>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="content">
-        <h1 class="text-primary">{game.Name}</h1>
-        <h3 class="text-info">{game.Description}</h3>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-      
+      </div>
+
+
     ));
   }
 
@@ -43,10 +43,10 @@ const Home = () => {
       <div className='row'>
         <div className='gameList flex-wrap'>
           {games === null ? <div>loading</div> : getGames()}
-          </div>
-          </div>
-          </div>
-    
+        </div>
+      </div>
+    </div>
+
   );
 }
 
