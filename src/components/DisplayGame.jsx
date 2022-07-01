@@ -44,14 +44,6 @@ const DisplayGame = () => {
     });
   };
 
-  // function getPosts() {
-  //   return posts.map((post) => (
-  //     <div key={post.gameId} id='list'>
-  //       <p>{post.post}</p>
-  //     </div>
-  //   ))
-  // }
-
   //Reload Page
   function refreshPage() {
     window.location.reload(true);

@@ -11,8 +11,7 @@ const SignUp = () => {
   const [user, setUser] = useState({
     username: "",
     email: "",
-    password: "",
-    //confirmPassword: ""
+    password: ""
   })
 
   function handleChange(e) {
@@ -66,17 +65,6 @@ const SignUp = () => {
           />
 
         </div>
-        {/* <div className="mb-3">
-          <label>Confirm Password</label>
-          <input
-            onChange={handleChange}
-            name="confirmPassword"
-            type="password"
-            className="form-control"
-            placeholder="Confirm password"
-          />
-
-        </div> */}
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
             Sign Up
