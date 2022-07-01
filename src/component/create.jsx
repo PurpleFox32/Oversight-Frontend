@@ -45,7 +45,7 @@ function Create() {
 
         };
 
-  return (
+    return (
     <div className="create">
         <h1>Create Review </h1>
         <div className="form">
@@ -61,14 +61,6 @@ function Create() {
             }} />
 
             <button onClick={submitReview}>Submit</button>
-
-            {/* <div className="card">
-                <h1>GameName: </h1>
-                <p>Game Review:</p>
-                <button onClick={deleteReveiw}>Delete</button>
-                <input type="text" id="updateInput" />
-                <button>Update</button>
-                </div> */}
 
             {gameReviewList.map((val)=>{
                 return(
@@ -86,9 +78,7 @@ function Create() {
             })}
 
         </div>
-      
     </div>
-  )
-}
+)}
 
 export default Create
