@@ -1,31 +1,52 @@
 import { React, useState, useEffect } from 'react';
 import axios from 'axios';
 import '../stylesheets/search.css';
+import { useParams, useNavigate } from 'react-router-dom';
 
 function Search() {
+  const params = useParams();
   const [games, setGames] = useState([]);
+  const [enteredTitle, setEnteredTitle] = useState('');
 
-  useEffect(() => {
-    axios.get('http://localhost:3001/games/list').then((response) => {
+  useEffect(() => {}, []);
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    setEnteredTitle(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    //setEnteredTitle(enteredTitle);
+    let url = 'http://localhost:3001/games/search/' + enteredTitle;
+
+    axios.get(url).then((response) => {
       console.log(response);
       setGames(response.data);
+      const event = new CustomEvent('search', { detail: response.data });
+      window.dispatchEvent(event);
     });
-  }, []);
+  };
 
   return (
     <div class='searchForm'>
-      <form class='d-flex'>
+      <form class='d-flex' onSubmit={handleSubmit}>
         <input
           class='form-control me-2'
           type='search'
           placeholder='Search'
           aria-label='Search'
+          onChange={handleChange}
+          //value={enteredTitle}
         />
-        <a href={`/oneGame/${games.GameId}`}>
-          <button class='btn btn-outline-info' type='submit'>
-            Search
-          </button>
-        </a>
+
+        <button
+          class='btn btn-outline-info'
+          type='submit'
+          onClick={handleSubmit}
+        >
+          Search
+        </button>
       </form>
     </div>
   );
