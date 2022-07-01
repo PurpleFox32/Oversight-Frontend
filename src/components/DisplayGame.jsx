@@ -21,7 +21,7 @@ const DisplayGame = () => {
     //user should then be able to add a post(review)
 
     getGame();
-  }, []);
+  }, [params.gameId]);
 
   const handleChange = (e) => {
     setNewPost(e.target.value);
@@ -38,7 +38,7 @@ const DisplayGame = () => {
   return (
     <div>
       <NavBar2 />
-      <img src={game.GameThumbnail} />
+      <img src={game.GameThumbnail} alt=''/>
       <h1>{game.Name}</h1>
       <form onSubmit={handleSubmit}>
         <input onChange={handleChange} placeholder='type a review' />

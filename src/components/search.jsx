@@ -1,11 +1,11 @@
 import { React, useState, useEffect } from 'react';
 import axios from 'axios';
 import '../stylesheets/search.css';
-import { useParams, useNavigate } from 'react-router-dom';
+// import { useParams, useNavigate } from 'react-router-dom';
 
 function Search() {
-  const params = useParams();
-  const [games, setGames] = useState([]);
+  // const params = useParams();
+  const [/* games */, setGames] = useState([]);
   const [enteredTitle, setEnteredTitle] = useState('');
 
   useEffect(() => {}, []);
