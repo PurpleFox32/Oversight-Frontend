@@ -29,8 +29,7 @@ const DisplayGame = () => {
     }
 
     getGame();
-    getPosts([]);
-  }, [params.gameId, params.id]);
+  }, [params.gameId]);
 
   const handleChange = (e) => {
     setNewPost(e.target.value);
@@ -60,7 +59,7 @@ const DisplayGame = () => {
   return (
     <div>
       <NavBar2 />
-      <img src={game.GameThumbnail} alt='thumbnail' />
+      <img src={game.GameThumbnail} alt=''/>
       <h1>{game.Name}</h1>
       <div className='postList flex-wrap'>
         {posts.map((post) => (
