@@ -19,12 +19,12 @@ function List() {
       console.log(response);
       setGames(response.data);
     });
-  }, []);
+  }, [params.search]);
 
   function getGames() {
     return games.map((game) => (
       <div key={game.GameId} id='listItem' >
-        <img src={game.GameThumbnail} />
+        <img src={game.GameThumbnail} alt='' />
         <h1>{game.Name}</h1>
         <h3>{game.Description}</h3>
         <Link to={`/oneGame/${game.GameId}`}>view</Link>
