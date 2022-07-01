@@ -45,16 +45,6 @@ function List() {
       <div className='row'>
         <div className='gameList flex-wrap'>
           {games === null ? <div>loading</div> : getGames()}
-
-          {/* <div className="row">
-        <div>
-          {games.map((game) => (
-            <div key={game.GameId} id='listItem'>
-              <img src={game.GameThumbnail} />
-              <h1>{game.Name}</h1>
-              <h3>{game.Description}</h3>
-            </div> 
-          ))} */}
         </div>
       </div>
     </div>

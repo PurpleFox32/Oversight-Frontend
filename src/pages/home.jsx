@@ -22,16 +22,16 @@ const Home = () => {
 
   function getGames() {
     return games.map((game) => (
-      <div key={game.GameId}>
-        <div class='container'>
+      <div key={game.GameId} >
+        <div class="container">
           <div class='d-flex justify-content-center flex-wrap'>
             <div class='card d-flex position-relative flex-column'>
               <div class='imgContainer'>
                 <img src={game.GameThumbnail} alt=''/>
               </div>
-              <div class='content'>
-                <h1 class='text-primary'>{game.Name}</h1>
-                <h3 class='text-info'>{game.Description}</h3>
+              <div class="content">
+                <h1 class="text-primary">{game.Name}</h1>
+                <h3 class="text-info">{game.Description}</h3>
               </div>
             </div>
           </div>

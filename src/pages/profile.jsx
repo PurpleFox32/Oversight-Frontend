@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react'
 import API from '../UTILS/API';
 import NavBar from '../components/NavBar2'
