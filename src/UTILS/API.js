@@ -29,6 +29,9 @@ const API = {
   createPost2: (id, post) => {
     return axios.post(`${url2}/create/${id}`, { post: post });
   },
+  getPosts: (id) => {
+    return axios.get(`${url3}/${id}`);
+  },
 };
 
 export default API;

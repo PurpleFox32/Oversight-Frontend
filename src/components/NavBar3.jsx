@@ -15,7 +15,7 @@ const NavBar3 = () => {
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="http://localhost:3000/home">
-      <img src="OverSight-Logo.png" alt="Logo" width="29px" height="28px" class='logo' /> verSight
+      <img src="OverSight-Logo.png" alt="Logo" width="28px" height="28px" class='logo' /> verSight
     </a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">

@@ -1,25 +1,14 @@
-
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
 import API from '../UTILS/API';
-import Data from '../review.json'
 import NavBar from '../components/NavBar2'
-import Rating from '../components/Rating'
-import profileList from '../components/profileList';
 
 
 
 
 const Profile = () => {
   const [user, setUser] = useState({});
-  const { id } = useParams();
 
   useEffect(() => {
-    // API.getOneById(id).then(res => {
-    //   console.log(res);
-    //   setUser(res.data);
-    //   console.log(user)
-    // })
 
     let userToken = JSON.parse(localStorage.getItem("userToken"));
 
