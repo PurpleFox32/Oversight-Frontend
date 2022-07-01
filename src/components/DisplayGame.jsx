@@ -29,6 +29,7 @@ const DisplayGame = () => {
     }
 
     getGame();
+    getPosts();
   }, [params.gameId]);
 
   const handleChange = (e) => {
