@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import {useParams} from 'react-router-dom';
-import API from '../UTILS/API';
 import NavBar from '../components/NavBar2';
 import axios from 'axios';
 
@@ -22,22 +21,17 @@ const Profile = () => {
   }, []
   )
 
-
   return (
-
     <div className='view-user'>
       <NavBar />
-      <h1>Welcome  </h1>
+      <h1>Welcome {user.username} </h1>
       <hr style={{
           color: '#32FBE2',
           height: '4px'
         }}/>
-      <h3>Email: </h3>
-      <h3>Admin: </h3>
-      <h6>User Id: </h6>
-
+      <h3>Email: {user.email}</h3>
+      <h6>User Id: {user.user_id} || Date Created: {user.createdAt}</h6>
     </div>
-
   )
 }
 
