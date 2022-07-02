@@ -26,21 +26,18 @@ function List() {
     return function cleanup() {
       window.removeEventListener('search', handler, false);
     };
-  }, []);
+  }, [params.search]);
 
   function getGames() {
     return games.map((game) => (
       <div key={game.GameId} id='listItem'>
-        <div class="container">
-        <img src={game.GameThumbnail} />
+        <img src={game.GameThumbnail} alt=''/>
         <h1>{game.Name}</h1>
         <h3>{game.Description}</h3>
-      </div>
-      <div class="button-container">
         <Link to={`/oneGame/${game.GameId}`}>
           <button class="btn btn-primary" type="button">view</button>
         </Link>
-        </div>
+        
       </div>
     ));
   }
@@ -51,16 +48,6 @@ function List() {
       <div className='row'>
         <div className='gameList flex-wrap'>
           {games === null ? <div>loading</div> : getGames()}
-
-          {/* <div className="row">
-        <div>
-          {games.map((game) => (
-            <div key={game.GameId} id='listItem'>
-              <img src={game.GameThumbnail} />
-              <h1>{game.Name}</h1>
-              <h3>{game.Description}</h3>
-            </div> 
-          ))} */}
         </div>
       </div>
     </div>
