@@ -4,10 +4,6 @@ import NavBar2 from './OneGame-Nav';
 import API from '../UTILS/API';
 import '../stylesheets/bootstrap.css'
 
-
-
-
-
 const DisplayGame = () => {
   const params = useParams();
   const [game, setGame] = useState([]);
