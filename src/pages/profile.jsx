@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import {useParams} from 'react-router-dom';
-import NavBar from '../components/NavBar2';
 import axios from 'axios';
 
 
@@ -18,12 +17,11 @@ const Profile = () => {
       setUser(response.data);
     })
 
-  }, []
+  }, [params.id]
   )
 
   return (
     <div className='view-user'>
-      <NavBar />
       <h1>Welcome {user.username} </h1>
       <hr style={{
           color: '#32FBE2',
