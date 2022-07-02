@@ -11,14 +11,11 @@ const NavBar1 = () => {
       <span class="navbar-toggler-icon"></span>
       </button>
         <a class="navbar-brand" href="http://localhost:3000/home">
-          <img src="OverSight-Logo.png" alt="Logo" width="28px" height="28px" class="logo" /> verSight
+          <img src="./Logo/OverSight-Logo.png" alt="Logo" width="28px" height="28px" class="logo" /> verSight
         </a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id='btns'>
-            <li class="nav-item">
-              <a class="btn btn-outline-primary" aria-current="page" href="http://localhost:3000/about" id="about">About</a>
-            </li>
             <li class="nav-item">
               <a class="btn btn-outline-info" href="http://localhost:3000/home" tabindex="-1" aria-disabled="true" id="cancel">Cancel</a>
             </li>
