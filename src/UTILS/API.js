@@ -30,7 +30,10 @@ const API = {
     return axios.get(`${url3}/${id}`);
   },
   getUserInfo: (id) => {
-    return axios.get(`${url}/profile/${id}`)
+    return axios.get(`${url}/profile`);
+  },
+  userGameInfo: (id) => {
+    return axios.get(`${url3}/${id}`);
   }
 };
 

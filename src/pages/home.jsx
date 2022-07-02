@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import NavBar3 from '../components/NavBar3';
+import NavBar3 from '../components/Home-Nav';
 import '../stylesheets/home.css';
 
 const Home = () => {

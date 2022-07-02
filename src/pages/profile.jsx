@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import {useParams} from 'react-router-dom';
+import NavBar from '../components/Profile-Nav';
 import axios from 'axios';
-
-
-
 
 const Profile = () => {
   const params = useParams();
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    let url = 'http://localhost:3001/users/profile/' + params.id;
+    let url = 'http://localhost:3001/users/profile';
 
     axios.get(url).then((response) => {
       console.log(response);
@@ -22,6 +20,7 @@ const Profile = () => {
 
   return (
     <div className='view-user'>
+      <NavBar />
       <h1>Welcome {user.username} </h1>
       <hr style={{
           color: '#32FBE2',
