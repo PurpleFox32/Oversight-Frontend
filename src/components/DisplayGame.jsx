@@ -6,6 +6,8 @@ import '../stylesheets/bootstrap.css'
 
 
 
+
+
 const DisplayGame = () => {
   const params = useParams();
   const [game, setGame] = useState([]);
@@ -63,6 +65,7 @@ const DisplayGame = () => {
       </div>
     ))}
       </div>
+      
       <form onSubmit={handleSubmit}>
         <input onChange={handleChange} placeholder='type a review' />
         <button type='submit' onClick={refreshPage} >Submit</button>

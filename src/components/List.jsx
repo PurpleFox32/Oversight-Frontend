@@ -4,7 +4,7 @@ import '../stylesheets/List.css';
 import NavBar2 from './NavBar2';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
-import NavBar3 from './NavBar3';
+
 
 
 function List() {
