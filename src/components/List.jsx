@@ -5,6 +5,8 @@ import NavBar2 from './NavBar2';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
+
+
 function List() {
   const params = useParams();
   const [games, setGames] = useState([]);
@@ -30,7 +32,9 @@ function List() {
   }, [params.search]);
 
   function getGames() {
+
     if (games === null) return;
+    
     return games.map((game) => (
       <div key={game.GameId} id='listItem'>
         <img src={game.GameThumbnail} alt='' />
