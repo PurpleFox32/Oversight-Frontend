@@ -3,9 +3,6 @@ import {useParams} from 'react-router-dom';
 import NavBar from '../components/Profile-Nav';
 import axios from 'axios';
 
-
-
-
 const Profile = () => {
   const params = useParams();
   const [user, setUser] = useState([]);
