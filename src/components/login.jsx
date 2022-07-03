@@ -63,6 +63,9 @@ const Login = () => {
 
               Submit
             </button>
+            <p className="forgot-password text-right">
+          Dont Have An Account? <a href="/sign-up">Sign Up?</a>
+        </p>
           </div>
         </div>
       </form>
