@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import NavBar2 from './OneGame-Nav';
 import API from '../UTILS/API';
 import '../stylesheets/bootstrap.css'
+import '../stylesheets/review.css'
 
 const DisplayGame = () => {
   const params = useParams();
@@ -52,6 +53,7 @@ const DisplayGame = () => {
   return (
     <div>
       <NavBar2 />
+      <div class="logostyle">
       <img src={game.GameThumbnail} alt=''/>
       <h1>{game.Name}</h1>
       <div className='postList flex-wrap'>
@@ -66,6 +68,7 @@ const DisplayGame = () => {
         <input onChange={handleChange} placeholder='type a review' />
         <button type='submit' onClick={refreshPage} >Submit</button>
       </form>
+    </div>
     </div>
   );
 };
