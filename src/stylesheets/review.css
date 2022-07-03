@@ -1,7 +1,7 @@
 img{
     justify-content: center;
     text-align: center;
-    
+
 }
 h1{
     text-align: center;
@@ -13,3 +13,38 @@ h1{
 form{
     text-align: center;
 }
+.gamelogo img{
+  
+    margin-bottom: 4em;
+    max-width: 55%;
+    max-height: 50%;
+}
+.gamelogo{
+    margin-top: 4em;
+    margin-bottom: 4em;
+    width: 100%;
+    text-align: center;
+    
+}
+@media (max-width: 500px ) {
+    .gamelogo  {
+         margin:auto;
+         width: 100%;
+         text-align: center;
+         justify-content: center;
+         
+        
+ 
+     }
+     
+ }
+@media (max-width: 900px ) {
+    .gamelogo{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    
+}
+
