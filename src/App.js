@@ -9,7 +9,6 @@ import About from './pages/about';
 import Profile from './pages/profile';
 import SearchResults from './pages/searchresults';
 import { Outlet } from 'react-router-dom';
-import ReviewBoard from './pages/reviewBoard';
 import CurrentReview from './pages/CurrentReview';
 import DisplayGame from './components/DisplayGame';
 import List from './components/List';
@@ -27,7 +26,6 @@ function App() {
           <Route path='/searchResults' element={<SearchResults />} />
           <Route path='/login' element={<Login />} />
           <Route path='/sign-up' element={<Signup />} />
-          <Route path='/reviewBoard' element={<ReviewBoard />} />
           <Route path='/CurrentReview' element={<CurrentReview />} />
           <Route path='/games' element={<List />} />
           <Route path='/games/:search' element={<List />} />
