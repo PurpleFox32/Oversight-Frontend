@@ -18,7 +18,7 @@ img{
 }
 
 .container .card:hover {
-    height: 500px;
+    height: 600px;
     margin-bottom: 0em;
     box-shadow: 0 5px 20px rgb(18, 128, 201);
 }
