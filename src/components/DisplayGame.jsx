@@ -54,9 +54,10 @@ const DisplayGame = () => {
     <div>
       <NavBar2 />
       <div class="gamelogo">
+      <h1>{game.Name}</h1>
       <img src={game.GameThumbnail} alt=''/>
       </div>
-      <h1>{game.Name}</h1>
+      
       <div className='postList flex-wrap'>
         {posts.map((post) => (
       <div key={post.gameId} id='list'>
