@@ -9,8 +9,9 @@ img{
 
 #listItem{
     margin:5em;
-    border: 2px solid cyan;
+    /* border: 2px solid cyan; */
     max-width: 25em;
+    
 }
 
 h1{
@@ -25,3 +26,13 @@ h3{
     justify-content: center;
 
 }
+button.btn.btn-primary{
+   margin-bottom: 5%;
+  
+  
+}
+  
+   
+   
+   
+
