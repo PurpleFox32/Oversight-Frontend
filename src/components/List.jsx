@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import '../stylesheets/List.css';
-import NavBar2 from './Games-Nav';
+import NavBar2 from './OneGame-Nav';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
@@ -37,6 +37,7 @@ function List() {
     
     return games.map((game) => (
       <div key={game.GameId} id='listItem'>
+        
         <img src={game.GameThumbnail} alt='' />
         <h1>{game.Name}</h1>
         <h3>{game.Description}</h3>

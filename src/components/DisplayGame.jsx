@@ -51,8 +51,11 @@ const DisplayGame = () => {
   }
 
   return (
+
+  <div>
+    <NavBar2 />
+  
     <div>
-      <NavBar2 />
       <div class="gamelogo">
       <img src={game.GameThumbnail} alt=''/>
       </div>
@@ -65,10 +68,16 @@ const DisplayGame = () => {
     ))}
       </div>
       
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} id='name'>
         <input onChange={handleChange} placeholder='type a review' />
         <button type='submit' onClick={refreshPage} >Submit</button>
+        <br/>
+        {/* Need to still write the code for these and have them show where the review is listed. 
+        Where is that at? 
+        <button type='submit' onClick={refreshPage} >Delete</button>
+        <button type='submit' onClick={refreshPage} >Update</button> */}
       </form>
+    </div>
     </div>
     
   );
