@@ -34,7 +34,10 @@ const API = {
   },
   userGameInfo: (id) => {
     return axios.get(`${url3}/${id}`);
-  }
+  },
+  getUserData: (token) => {
+    return axios.get(`${url}/profile/${token}`);
+  },
 };
 
 export default API;
