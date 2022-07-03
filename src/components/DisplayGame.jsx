@@ -57,7 +57,7 @@ const DisplayGame = () => {
   
     <div>
       <div class="gamelogo">
-      <h1>{game.Name}</h1>
+      <h1 class="text-primary" >{game.Name}</h1>
       <img src={game.GameThumbnail} alt=''/>
       </div>
       
