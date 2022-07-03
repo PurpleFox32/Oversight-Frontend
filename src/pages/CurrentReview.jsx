@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar2 from '../components/Games-Nav'
+import NavBar2 from '../components/Games-Page-Nav'
 
 const CurrentReview = () => {
   return (

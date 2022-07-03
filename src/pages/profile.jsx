@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import NavBar from '../components/Profile-Nav';
 import API from '../UTILS/API';
-import axios from 'axios';
+import NavBar from '../components/Games-Page-Nav'
+
+
+
 
 const Profile = () => {
   const params = useParams();
