@@ -5,7 +5,7 @@ import '../stylesheets/search.css';
 
 function Search() {
   // const params = useParams();
-  const [/* games */, setGames] = useState([]);
+  const [, /* games */ setGames] = useState([]);
   const [enteredTitle, setEnteredTitle] = useState('');
 
   useEffect(() => {}, []);
