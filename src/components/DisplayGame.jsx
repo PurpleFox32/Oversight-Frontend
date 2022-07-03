@@ -53,8 +53,9 @@ const DisplayGame = () => {
   return (
     <div>
       <NavBar2 />
-      <div class="logostyle">
+      <div class="gamelogo">
       <img src={game.GameThumbnail} alt=''/>
+      </div>
       <h1>{game.Name}</h1>
       <div className='postList flex-wrap'>
         {posts.map((post) => (
@@ -69,7 +70,7 @@ const DisplayGame = () => {
         <button type='submit' onClick={refreshPage} >Submit</button>
       </form>
     </div>
-    </div>
+    
   );
 };
 
