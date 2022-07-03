@@ -22,7 +22,7 @@ const NavBar3 = () => {
           </button>
           <a class="navbar-brand" href="http://localhost:3000/home">
           <img
-            src=".\Logo\OverSight-Logo.png"
+            src="OverSight-Logo.png"
             alt="Logo"
             width="28px"
             height="28px"
