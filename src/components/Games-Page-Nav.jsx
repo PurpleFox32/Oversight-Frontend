@@ -15,9 +15,6 @@ const NavBar2 = () => {
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="btn btn-outline-primary btn" aria-current="page" href="http://localhost:3000/about">About</a>
-            </li>
-            <li class="nav-item">
               <a class="btn btn-outline-info btn" href="http://localhost:3000/home" tabindex="-1" aria-disabled="true">Logout</a>
             </li>
             <li class="nav-item">
