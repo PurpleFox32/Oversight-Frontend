@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import NavBar2 from './Games-Page-Nav';
 import API from '../UTILS/API';
 import '../stylesheets/bootstrap.css'
+import '../stylesheets/review.css'
 
 const DisplayGame = () => {
   const params = useParams();
@@ -50,10 +51,16 @@ const DisplayGame = () => {
   }
 
   return (
+
+  <div>
+    <NavBar2 />
+  
     <div>
-      <NavBar2 />
-      <img src={game.GameThumbnail} alt=''/>
+      <div class="gamelogo">
       <h1>{game.Name}</h1>
+      <img src={game.GameThumbnail} alt=''/>
+      </div>
+      
       <div className='postList flex-wrap'>
         {posts.map((post) => (
       <div key={post.gameId} id='list'>
@@ -61,11 +68,19 @@ const DisplayGame = () => {
       </div>
     ))}
       </div>
-      <form onSubmit={handleSubmit}>
+      
+      <form onSubmit={handleSubmit} id='name'>
         <input onChange={handleChange} placeholder='type a review' />
         <button type='submit' onClick={refreshPage} >Submit</button>
+        <br/>
+        {/* Need to still write the code for these and have them show where the review is listed. 
+        Where is that at? 
+        <button type='submit' onClick={refreshPage} >Delete</button>
+        <button type='submit' onClick={refreshPage} >Update</button> */}
       </form>
     </div>
+    </div>
+    
   );
 };
 

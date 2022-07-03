@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import NavBar from '../components/Profile-Nav';
 import API from '../UTILS/API';
 import NavBar from '../components/Games-Page-Nav'
 
@@ -6,43 +8,45 @@ import NavBar from '../components/Games-Page-Nav'
 
 
 const Profile = () => {
-  const [user, setUser] = useState({});
+  const params = useParams();
+  const [user, setUser] = useState([]);
 
   useEffect(() => {
+    // let url = 'http://localhost:3001/users/profile';
 
-    let userToken = JSON.parse(localStorage.getItem("userToken"));
+    // axios.get(url).then((response) => {
+    //   console.log(response);
+    //   setUser(response.data);
+    // })
+    let userToken = JSON.parse(localStorage.getItem('userToken'));
 
     function fetch() {
-      console.log(userToken)
-      API.getUserData(userToken).then(response => {
-        console.log(response)
-        setUser(response.data)
-      })
+      console.log(userToken);
+      API.getUserData(userToken).then((response) => {
+        console.log(response);
+        setUser(response.data);
+      });
     }
-
     fetch();
-  }, []
-  )
-
+    // params.id
+  }, []);
 
   return (
-
     <div className='view-user'>
       <NavBar />
-
-
-      <h1> Welcome {user.username}</h1>
-      <br />
-      <h3>Your most current game reviews</h3>
+      <h1>Welcome {user.username} </h1>
       <hr
         style={{
           color: '#32FBE2',
-          height: '4px'
-        }} />
-
+          height: '4px',
+        }}
+      />
+      <h3>Email: {user.email}</h3>
+      <h6>
+        User Id: {user.user_id} || Date Created: {user.createdAt}
+      </h6>
     </div>
+  );
+};
 
-  )
-}
-
-export default Profile
+export default Profile;

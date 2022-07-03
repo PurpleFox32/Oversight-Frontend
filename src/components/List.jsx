@@ -5,6 +5,8 @@ import NavBar2 from './Games-Page-Nav';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
+
+
 function List() {
   const params = useParams();
   const [games, setGames] = useState([]);
@@ -22,6 +24,7 @@ function List() {
     const handler = function (e) {
       setGames(e.detail);
     };
+
     window.addEventListener('search', handler, false);
     return function cleanup() {
       window.removeEventListener('search', handler, false);
@@ -29,19 +32,26 @@ function List() {
   }, [params.search]);
 
   function getGames() {
+
+    if (games === null) return;
+    
     return games.map((game) => (
       <div key={game.GameId} id='listItem'>
-        <img src={game.GameThumbnail} alt=''/>
+        
+        <img src={game.GameThumbnail} alt='' />
         <h1>{game.Name}</h1>
         <h3>{game.Description}</h3>
-        <Link to={`/oneGame/${game.GameId}`}>view</Link>
+        <Link to={`/oneGame/${game.GameId}`}>
+          <button class="btn btn-primary" type="button">view</button>
+        </Link>
+        
       </div>
     ));
   }
 
   return (
     <div>
-      <NavBar2 />
+      <NavBar />
       <div className='row'>
         <div className='gameList flex-wrap'>
           {games === null ? <div>loading</div> : getGames()}

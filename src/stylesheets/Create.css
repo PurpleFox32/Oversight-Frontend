@@ -9,7 +9,7 @@
 }
 
 .form input{
-    width: 400px;
+    width: 300px;
     height: 60px;
     margin: 10px;
     font-size: 25px;
@@ -21,11 +21,16 @@
     border: 2px solid;
     border-radius: 15px;
     margin: 10px;
+    
 }
 
 #updateInput{
     width: 200px;
     height: 20px;
     margin-bottom: px;
+}
+
+p{ 
+    text-align: center;
 }
 
