@@ -65,18 +65,14 @@ const DisplayGame = () => {
         {posts.map((post) => (
       <div key={post.gameId} id='list'>
         <p>{post.post}</p>
+        {/* <button type='submit' onClick={deletePost} >Delete</button> */}
       </div>
     ))}
       </div>
       
       <form onSubmit={handleSubmit} id='name'>
-        <input onChange={handleChange} placeholder='type a review' />
-        <button type='submit' onClick={refreshPage} >Submit</button>
-        <br/>
-        {/* Need to still write the code for these and have them show where the review is listed. 
-        Where is that at? 
-        <button type='submit' onClick={refreshPage} >Delete</button>
-        <button type='submit' onClick={refreshPage} >Update</button> */}
+        <textarea onChange={handleChange} placeholder='type a review' /><br />
+        <button class='btn btn-outline-primary btn' type='submit' onClick={refreshPage} >Submit</button>
       </form>
     </div>
     </div>
