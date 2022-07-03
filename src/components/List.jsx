@@ -24,6 +24,7 @@ function List() {
     const handler = function (e) {
       setGames(e.detail);
     };
+
     window.addEventListener('search', handler, false);
     return function cleanup() {
       window.removeEventListener('search', handler, false);
@@ -31,10 +32,12 @@ function List() {
   }, [params.search]);
 
   function getGames() {
+
+    if (games === null) return;
     
     return games.map((game) => (
       <div key={game.GameId} id='listItem'>
-        <img src={game.GameThumbnail} alt=''/>
+        <img src={game.GameThumbnail} alt='' />
         <h1>{game.Name}</h1>
         <h3>{game.Description}</h3>
         <Link to={`/oneGame/${game.GameId}`}>
