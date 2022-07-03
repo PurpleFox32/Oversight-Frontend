@@ -1,23 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import NavBar from '../components/Profile-Nav';
 import API from '../UTILS/API';
-import NavBar from '../components/Games-Page-Nav'
 
 
 
 
 const Profile = () => {
-  const params = useParams();
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    // let url = 'http://localhost:3001/users/profile';
-
-    // axios.get(url).then((response) => {
-    //   console.log(response);
-    //   setUser(response.data);
-    // })
     let userToken = JSON.parse(localStorage.getItem('userToken'));
 
     function fetch() {
@@ -28,7 +19,6 @@ const Profile = () => {
       });
     }
     fetch();
-    // params.id
   }, []);
 
   return (

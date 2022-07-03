@@ -1,4 +1,6 @@
 import React from 'react'
+import Search from './search'
+import '../stylesheets/NavBar.css'
 
 const NavBar4 = () => {
   return (
@@ -18,11 +20,11 @@ const NavBar4 = () => {
                 <a class="btn btn-outline-info" href="http://localhost:3000/home" tabindex="-1" aria-disabled="true" id="logout">Logout</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-outline-secondary" href="http://localhost:3000/profile" tabindex="-1" aria-disabled="true" id="profile">Games</a>
+                <a class="btn btn-outline-secondary" href="http://localhost:3000/games" tabindex="-1" aria-disabled="true" id="profile">Games</a>
               </li>
             </ul>
-            <Search />
 
+            <Search />
           </div>
         </div>
       </nav>
