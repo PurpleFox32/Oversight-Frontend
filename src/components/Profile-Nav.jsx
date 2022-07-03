@@ -18,7 +18,7 @@ const NavBar4 = () => {
                 <a class="btn btn-outline-info" href="http://localhost:3000/home" tabindex="-1" aria-disabled="true" id="logout">Logout</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-outline-secondary" href="http://localhost:3000/profile" tabindex="-1" aria-disabled="true" id="profile">Profile</a>
+                <a class="btn btn-outline-secondary" href="http://localhost:3000/profile" tabindex="-1" aria-disabled="true" id="profile">Games</a>
               </li>
             </ul>
             <Search />

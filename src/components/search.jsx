@@ -1,10 +1,8 @@
 import { React, useState, useEffect } from 'react';
 import axios from 'axios';
 import '../stylesheets/search.css';
-// import { useParams, useNavigate } from 'react-router-dom';
 
 function Search() {
-  // const params = useParams();
   const [/* games */, setGames] = useState([]);
   const [enteredTitle, setEnteredTitle] = useState('');
 
@@ -17,7 +15,6 @@ function Search() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    //setEnteredTitle(enteredTitle);
     let url = 'http://localhost:3001/games/search/' + enteredTitle;
 
     axios.get(url).then((response) => {

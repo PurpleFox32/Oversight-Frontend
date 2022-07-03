@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import API from '../UTILS/API';
 import { useNavigate } from "react-router-dom";
-import NavBar from "./NavBar1";
+import NavBar from "./Login-Signup-Nav";
 
 
 const Login = () => {

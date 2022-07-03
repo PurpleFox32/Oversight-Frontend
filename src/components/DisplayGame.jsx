@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import NavBar2 from './NavBar2';
+import NavBar2 from './Games-Page-Nav';
 import API from '../UTILS/API';
 import '../stylesheets/bootstrap.css'
 

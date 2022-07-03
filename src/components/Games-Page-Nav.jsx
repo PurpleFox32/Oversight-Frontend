@@ -23,9 +23,6 @@ const NavBar2 = () => {
             <li class="nav-item">
               <a class="btn btn-outline-light btn" href="http://localhost:3000/profile" tabindex="-1" aria-disabled="true">Profile</a>
             </li>
-            <li class="nav-item">
-              <a class="btn btn-outline-primary btn" href="http://localhost:3000/games" tabindex="-1" aria-disabled="true">Game List</a>
-            </li>
           </ul>
           <Search/>
         </div>

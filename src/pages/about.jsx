@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar3 from '../components/NavBar3';
+import NavBar3 from '../components/Home-Nav';
 import "../stylesheets/about.css"
 
 
