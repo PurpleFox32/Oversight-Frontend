@@ -1,8 +1,8 @@
 import { React, useState } from 'react';
-import NavBar3 from '../components/NavBar3';
+import NavBar3 from '../components/Home-Nav';
 import List from '../components/List';
 import Search from '../components/search';
-import NavBar1 from '../components/NavBar1';
+import NavBar1 from '../components/Login-Signup-Nav';
 
 function SearchResults() {
   const [inputText, setInputText] = useState('');

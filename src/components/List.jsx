@@ -1,9 +1,11 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import '../stylesheets/List.css';
-import NavBar2 from './NavBar2';
+import NavBar2 from './Games-Nav';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+
+
 
 function List() {
   const params = useParams();
@@ -29,6 +31,7 @@ function List() {
   }, [params.search]);
 
   function getGames() {
+    
     return games.map((game) => (
       <div key={game.GameId} id='listItem'>
         <img src={game.GameThumbnail} alt=''/>

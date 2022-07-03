@@ -14,9 +14,6 @@ const API = {
   getOneByUsername: (user) => {
     return axios.post(`${url}/login`, user);
   },
-  getUserData: (token) => {
-    return axios.get(`${url}/profile/${token}`);
-  },
   createPost: (data, token) => {
     return axios.post(`${url2}/${token}`, data);
   },
@@ -32,6 +29,12 @@ const API = {
   getPosts: (id) => {
     return axios.get(`${url3}/${id}`);
   },
+  getUserInfo: (id) => {
+    return axios.get(`${url}/profile`);
+  },
+  userGameInfo: (id) => {
+    return axios.get(`${url3}/${id}`);
+  }
 };
 
 export default API;
