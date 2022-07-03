@@ -20,12 +20,12 @@ const NavBar2 = () => {
         <a class="navbar-brand" href="http://localhost:3000/home">
         
         <img
-            src="OverSight-Logo.png"
-            alt="Logo"
+            src="../OverSight-Logo.png"
+            alt="logo"
             width="28px"
             height="28px"
             class="logo"
-          /> verSight
+          />verSight
         </a>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">

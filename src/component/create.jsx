@@ -65,8 +65,10 @@ function Create() {
             {gameReviewList.map((val)=>{
                 return(
                     <div className="resultcard">
+            
                 <h1> {val.gameName}</h1>
                 <p>{val.gameReview}</p>
+            
 
                 <button onClick={() => {deleteReveiw(val.gameName)}}>Delete</button>
                 <input type="text" id="updateInput" onChange={(e)=>{
