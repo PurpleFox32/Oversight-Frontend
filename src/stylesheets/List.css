@@ -1,6 +1,8 @@
 img {
     max-width: 20em;
     margin-top: 1.4em;
+    /* padding-left: .5em;
+    margin-right: .5em; */
 }
 
 .row {
@@ -23,6 +25,9 @@ h1 {
 
 h3 {
     margin-bottom: 0.8em;
+    text-align: center;
+    text-indent: 2%;
+    
 }
 
 .gameList {
@@ -32,7 +37,9 @@ h3 {
 }
 
 button.btn.btn-primary {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+  
+    
 
 
 }

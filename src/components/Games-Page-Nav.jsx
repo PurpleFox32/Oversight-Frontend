@@ -24,7 +24,7 @@ const NavBar2 = () => {
               <a class="btn btn-outline-secondary" href="http://localhost:3000/games" tabindex="-1" aria-disabled="true" id="profile">Games</a>
             </li>
           </ul>
-          <Search />
+         
         </div>
       </div>
     </nav>

@@ -28,8 +28,10 @@ const Home = () => {
             <div class='card d-flex position-relative flex-column'>
               <div class='imgContainer'>
                 <img src={game.GameThumbnail} alt=''/>
+                
               </div>
               <div class="content">
+                <br/>
                 <h1 class="text-primary">{game.Name}</h1>
                 <h3 class="text-info">{game.Description}</h3>
               </div>
