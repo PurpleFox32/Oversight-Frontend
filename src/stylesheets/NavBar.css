@@ -2,9 +2,9 @@
     margin: 0px;
     border-radius: 33.5em;
     box-shadow:
-        0 0 2px 1px rgb(0, 247, 255),
-        0 0 3px 2px #8c00ff,
-        0 0 4px 3px rgb(18, 109, 212);
+    0 0 2px 1px rgb(0, 247, 255),
+    0 0 3px 2px #8c00ff,
+    0 0 4px 3px rgb(225, 0, 255);
     max-width: 5em;
 }
 
